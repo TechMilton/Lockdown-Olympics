@@ -1,3 +1,6 @@
 const initial = {
+    categories: [],
+    sports: [],
+    
 
 };
