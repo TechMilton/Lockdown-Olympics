@@ -35,16 +35,10 @@ class Home extends Component {
                     </nav >
                 </div>
 
-
-
-
             </>
         );
     }
 
 }
-
-
-
 
 export default Home;
