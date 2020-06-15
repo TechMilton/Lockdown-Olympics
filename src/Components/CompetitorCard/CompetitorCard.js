@@ -30,7 +30,7 @@ class CompetitorCard extends Component {
 
 
         return (
-            <Card style={{ width: '18rem', margin: '2rem' }}>
+            <Card className="d-flex flex-column align-items-center p-4" style={{ width: '18rem', margin: '2rem', display:'flex'}}>
                 <Card.Img variant="top" src={logo} />
                 
                 <Card.Body>
