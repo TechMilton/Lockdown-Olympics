@@ -1,4 +1,71 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .header {
-  font-family: 'Suez One',
-    serif;
+  font-weight: bold;
+  font-family: 'Roboto Condensed',
+    sans-serif;
+  font-size: 4rem;
+}
+
+.backgroundLanding {
+  background-image: url(./imgs/stadium.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardLinks {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto Condensed',
+    sans-serif;
+}
+
+.Links {
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link1 {
+  background-color: #00A651;
+}
+
+.link2 {
+  background-color: #fcb131;
+}
+
+.homePageHeader {
+  height: 68vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.homePageAnchor {
+  text-align: center;
+  justify-content: center;
+}
+
+.colClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grass {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
