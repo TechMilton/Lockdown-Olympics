@@ -10,6 +10,7 @@ import {
 import Home from './Components/Home/Home';
 import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
+import CompetitorCard from './Components/CompetitorCard/CompetitorCard';
 
 const App = () => (
   <Router>
@@ -25,7 +26,8 @@ const App = () => (
         </Route>
 
         <Route exact path="/competitors">
-        <PageHeading>Competitors</PageHeading>
+        <PageHeading>Competitor Name</PageHeading>
+        <CompetitorCard />
         </Route>
 
         <Route exact path="/competitor">
