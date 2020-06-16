@@ -67,6 +67,22 @@ body {
 
 /* End of Card Styling */
 
+/* Competitor List Styling */
+
+.competitorList {
+  display: flex;
+}
+
+.competitorListItem {
+  height: 75px;
+  width: 500px;
+  background-color: #fcb131;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+/* End of Competitor List Styling */
+
 .backgroundLanding {
   width: 100vw;
   height: 100vh;

@@ -4,27 +4,25 @@ import Alert from 'react-bootstrap/Alert'
 
 import PageHeading from '../Components/PageHeading';
 
-class CompetitorList extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            competitors: [],
-
-        }
+const CompetitorList = (
+    {
+        competitors,
     }
+) => (
 
-    render() {
-        let { competitors } = this.state;
-
-
-        return (
-            <div className="backgroundImage">
+        <div className="backgroundImage">
             <PageHeading>Competitors</PageHeading>
+            <div class="competitorList"> {
+                competitors.map((competitor, index) =>
+                    <div class="competitorListItem">
+                        <h2 className="titleFont">{competitors.name}</h2>
+                    </div>
+                )}
             </div>
+        </div>
 
-        )
-    }
-}
+    )
+
+
 
 export default CompetitorList;
