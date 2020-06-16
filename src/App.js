@@ -10,7 +10,7 @@ import {
 import Home from './Components/Home/Home';
 import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
-import CompetitorCard from './Components/CompetitorCard/CompetitorCard';
+import CompetitorCard from './Components/CompetitorCard/container';
 
 import sports from '../src/imgs/sports.jpg';
 
@@ -23,27 +23,17 @@ const App = () => (
           </Home>
         </Route>
 
-        <Route exact path="/categories">
-          <PageHeading>Categories</PageHeading>
-        </Route>
 
         <Route exact path="/competitors">
-          <div className="backgroundCompetitor">
-            <PageHeading>Competitor Name</PageHeading>
-            <CompetitorCard />
-          </div>
-          </Route>
-
-
-        <Route>
-          <PageHeading>Competitors</PageHeading>
+          <CompetitorCard />
         </Route>
+        
 
-        <Route exact path="/competitor">
+        {/* <Route exact path="/competitors">
           {/* //single competitor page */}
-        </Route>
-        {/* <Route path="/competitors/:id" render={({ match }) => (
-          <Competitor competitor={match.params.id} />
+        
+        <Route path="/competitors/:id" render={({ match }) => (
+          <CompetitorCard id={match.params.id} />
         )} /> */}
 
         <Route exact path="/home">
