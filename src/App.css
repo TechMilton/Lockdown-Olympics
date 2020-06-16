@@ -15,7 +15,7 @@ body {
 }
 
 .contrastHeading {
-  color: cornsilk;
+  color: #fcb131;
   font-weight: bold;
   font-family: 'Roboto Condensed',
     sans-serif;
@@ -30,7 +30,13 @@ body {
   padding: 3rem; 
   text-align: -webkit-center;
   display: flex;
-  background-color: '#afd3ff';
+  background-color: #afd3ff;
+  border-color:  #fcb131;
+  border-width: 5px;
+}
+
+.titleFont {
+  font-family: 'Roboto Condensed';
 }
 
 .backgroundLanding {
