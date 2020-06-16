@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import sports from '../../src/imgs/sports.jpg';
+import Alert from 'react-bootstrap/Alert'
 
 import PageHeading from '../Components/PageHeading';
 
@@ -21,7 +22,7 @@ class CompetitorList extends Component {
             <PageHeading>Competitors</PageHeading>
 
         )
-}
+    }
 }
 
 export default CompetitorList;
