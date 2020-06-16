@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import grass from '../../imgs/grass.png';
 import logo from '../../imgs/Logo.png';
-import sports from '../../imgs/sports.jpg';
 import baseball from '../../imgs/baseball.png';
 
 import PageHeading from '../PageHeading';
@@ -29,10 +27,7 @@ class CompetitorCard extends Component {
 
 
         return (
-            <div style={{
-                height: '60rem',
-                backgroundImage: `url(${sports})`
-            }}>
+            <div className="backgroundImage">
                 <PageHeading>Competitor Name</PageHeading>
                 <div>
                     <Card className="competitorCard">

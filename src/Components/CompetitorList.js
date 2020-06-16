@@ -19,7 +19,9 @@ class CompetitorList extends Component {
 
 
         return (
+            <div className="backgroundImage">
             <PageHeading>Competitors</PageHeading>
+            </div>
 
         )
     }

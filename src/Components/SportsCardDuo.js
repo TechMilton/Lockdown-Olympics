@@ -14,10 +14,7 @@ class SportsCardDuo extends Component {
 
         return (
             <>
-             <div style={{
-                    height: '60rem',
-                    backgroundImage: `url(${sports})`
-                }}>
+             <div className="backgroundImage">
 
                 <PageHeading>Sports Catgeory</PageHeading>
                 <div className="sportCardGroup">
