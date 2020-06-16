@@ -3,7 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import axios from '../../axios';
 
+import grass from '../../imgs/grass.png';
 import logo from '../../imgs/Logo.png';
+import sports from '../../imgs/sports.jpg';
+import baseball from '../../imgs/baseball.png';
 
 class CompetitorCard extends Component {
     constructor(props) {
@@ -30,17 +33,38 @@ class CompetitorCard extends Component {
 
 
         return (
-            <Card className="d-flex flex-column align-items-center p-4" style={{ width: '18rem', margin: '2rem', display:'flex'}}>
-                <Card.Img variant="top" src={logo} />
+            // <div style={{
+            //     height: '60rem',
+            //     backgroundImage: `url(${sports})`
+            //     }}>
+            <div>
+            <Card 
+                style={{ 
+                    width: '25rem', 
+                    height: '35rem', 
+                    margin: 'auto', 
+                    marginTop: '1rem',
+                    padding: '3rem', 
+                    textAlign: '-webkit-center',
+                    display: 'flex',
+                    // backgroundImage: `url(${grass})`
+                    }}>
+                <Card.Img 
+                    variant="top" 
+                    src={baseball} 
+                    style={{ 
+                        width:'150px', 
+                    }}/>
                 
-                <Card.Body>
-                    <Card.Title>Competitor Name </Card.Title>
-                    <Card.Text>
-                        This is the bio of the competitor
-                    </Card.Text>
-                    <Button variant="info">Go somewhere</Button>
+                <Card.Body className="m-auto">
+                    <h1 className='p-2'>Competitor Name</h1>
+                    <h4 className='p-3'>This is the bio of said competitor</h4>
+                    <p>Date Of Birth</p>
+                    <p>04.05.1995</p>      
                 </Card.Body>
             </Card>
+            </div>
+        
             // <div className="d-flex flex-column align-items-center p-4">
             //     <h2>{competitor.name}</h2>
             //     <p>{competitor.bio}</p>

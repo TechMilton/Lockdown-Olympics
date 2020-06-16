@@ -12,6 +12,8 @@ import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard/CompetitorCard';
 
+import sports from '../src/imgs/sports.jpg';
+
 const App = () => (
   <Router>
     <Fragment>
@@ -22,12 +24,14 @@ const App = () => (
         </Route>
 
         <Route exact path="/categories">
-        <PageHeading>Categories</PageHeading>
+          <PageHeading>Categories</PageHeading>
         </Route>
 
         <Route exact path="/competitors">
-        <PageHeading>Competitor Name</PageHeading>
-        <CompetitorCard />
+          <div className="backgroundCompetitor">
+            <PageHeading>Competitor Name</PageHeading>
+            <CompetitorCard />
+          </div>
         </Route>
 
         <Route exact path="/competitor">
@@ -49,7 +53,7 @@ const App = () => (
         //mad category 
         </Route>
 
-      <FourOhFour /> 
+        <FourOhFour />
       </Switch>
 
     </Fragment>
