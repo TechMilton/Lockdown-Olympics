@@ -13,29 +13,28 @@ import CompetitorCard from './Components/CompetitorCard/container';
 import CustomNavBar from './Components/CustomNavBar';
 import SportsCardDuo from './Components/SportsCardDuo';
 import Category from './Components/Category/Category';
+import CompetitorList from './Components/CompetitorList';
 
 
 const App = () => (
   <Router>
     <Fragment>
       <Switch>
+
         <Route exact path="/">
           <CustomNavBar />
           <Home>
           </Home>
         </Route>
 
+        <Route exact path="/competitors">
+          <CompetitorList />
+        </Route>
 
         <Route exact path="/competitor">
           <CompetitorCard />
         </Route>
-        
-        <Route exact path="/competitors">
-          <CompetitorCard />
-        </Route>
-
-
-
+        {/* this route is currently just a placeholders for the single competitors page, actual route in comment below 
 
         {/* <Route exact path="/competitors">
           {/* //single competitor page */}
@@ -44,12 +43,13 @@ const App = () => (
           <CompetitorCard id={match.params.id} />
         )} />
 
+  
         <Route path="/categories">
           <Category />
         </Route>
 
         <Route exact path="/home">
-          <SportsCardDuo/>
+          <SportsCardDuo />
           {/* //home based category */}
         </Route>
 
@@ -57,8 +57,8 @@ const App = () => (
           {/* //garden based category  */}
         </Route>
 
-        <Route exact path="mad">
-          {/* //mad category  */}
+        <Route exact path="/mental">
+          {/* //mental category  */}
         </Route>
 
         <FourOhFour />
