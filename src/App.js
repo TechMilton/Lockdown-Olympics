@@ -8,12 +8,10 @@ import {
 } from "react-router-dom";
 
 import Home from './Components/Home/Home';
-import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard/container';
 import CustomNavBar from './Components/CustomNavBar';
 
-import sports from '../src/imgs/sports.jpg';
 
 const App = () => (
   <Router>
