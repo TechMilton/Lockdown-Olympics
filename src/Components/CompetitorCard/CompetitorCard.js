@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import axios from '../../axios';
-
 import grass from '../../imgs/grass.png';
 import logo from '../../imgs/Logo.png';
 import sports from '../../imgs/sports.jpg';
 import baseball from '../../imgs/baseball.png';
+
+import PageHeading from '../PageHeading';
 
 class CompetitorCard extends Component {
     constructor(props) {
@@ -20,11 +20,7 @@ class CompetitorCard extends Component {
 
     componentDidMount() {
         let { id } = this.props;
-        axios.get(`/games/api/competitors/${id}`).then(({ data }) => {
-            this.setState({
-                competitor: data.data,
-            });
-        })
+        this.props.getCompetitor(id)
     }
 
 
@@ -33,10 +29,11 @@ class CompetitorCard extends Component {
 
 
         return (
-            // <div style={{
-            //     height: '60rem',
-            //     backgroundImage: `url(${sports})`
-            //     }}>
+            <div style={{
+                height: '60rem',
+                backgroundImage: `url(${sports})`
+                }}>
+            <PageHeading>Competitor Name</PageHeading>
             <div>
             <Card 
                 style={{ 
@@ -47,6 +44,7 @@ class CompetitorCard extends Component {
                     padding: '3rem', 
                     textAlign: '-webkit-center',
                     display: 'flex',
+                    backgroundColor: '#afd3ff',
                     // backgroundImage: `url(${grass})`
                     }}>
                 <Card.Img 
@@ -63,6 +61,7 @@ class CompetitorCard extends Component {
                     <p>04.05.1995</p>      
                 </Card.Body>
             </Card>
+            </div>
             </div>
         
             // <div className="d-flex flex-column align-items-center p-4">
