@@ -32,38 +32,38 @@ class CompetitorCard extends Component {
             <div style={{
                 height: '60rem',
                 backgroundImage: `url(${sports})`
-                }}>
-            <PageHeading>Competitor Name</PageHeading>
-            <div>
-            <Card 
-                style={{ 
-                    width: '25rem', 
-                    height: '35rem', 
-                    margin: 'auto', 
-                    marginTop: '1rem',
-                    padding: '3rem', 
-                    textAlign: '-webkit-center',
-                    display: 'flex',
-                    backgroundColor: '#afd3ff',
-                    // backgroundImage: `url(${grass})`
-                    }}>
-                <Card.Img 
-                    variant="top" 
-                    src={baseball} 
-                    style={{ 
-                        width:'150px', 
-                    }}/>
-                
-                <Card.Body className="m-auto">
-                    <h1 className='p-2'>Competitor Name</h1>
-                    <h4 className='p-3'>This is the bio of said competitor</h4>
-                    <p>Date Of Birth</p>
-                    <p>04.05.1995</p>      
-                </Card.Body>
-            </Card>
+            }}>
+                <PageHeading>Competitor Name</PageHeading>
+                <div>
+                    <Card
+                        style={{
+                            width: '25rem',
+                            height: '35rem',
+                            margin: 'auto',
+                            marginTop: '1rem',
+                            padding: '3rem',
+                            textAlign: '-webkit-center',
+                            display: 'flex',
+                            backgroundColor: '#afd3ff',
+                            // backgroundImage: `url(${grass})`
+                        }}>
+                        <Card.Img
+                            variant="top"
+                            src={baseball}
+                            style={{
+                                width: '150px',
+                            }} />
+
+                        <Card.Body className="m-auto">
+                            <h1 className='p-2'>Competitor Name</h1>
+                            <h4 className='p-3'>This is the bio of said competitor</h4>
+                            <p>Date Of Birth</p>
+                            <p>04.05.1995</p>
+                        </Card.Body>
+                    </Card>
+                </div>
             </div>
-            </div>
-        
+
             // <div className="d-flex flex-column align-items-center p-4">
             //     <h2>{competitor.name}</h2>
             //     <p>{competitor.bio}</p>

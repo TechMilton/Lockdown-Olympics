@@ -8,12 +8,11 @@ import {
 } from "react-router-dom";
 
 import Home from './Components/Home/Home';
-import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard/container';
 import CustomNavBar from './Components/CustomNavBar';
+import Category from './Components/Category/Category';
 
-import sports from '../src/imgs/sports.jpg';
 
 const App = () => (
   <Router>
@@ -27,28 +26,22 @@ const App = () => (
 
 
         <Route exact path="/competitors">
-<<<<<<< HEAD
           <CompetitorCard />
-=======
-          <div className="backgroundCompetitor">
-            <PageHeading>Competitor Name</PageHeading>
-            <CompetitorCard />
-          </div>
         </Route>
 
 
-        <Route>
-          <PageHeading>Competitors</PageHeading>
->>>>>>> master
-        </Route>
-        
+
 
         {/* <Route exact path="/competitors">
           {/* //single competitor page */}
-        
+
         <Route path="/competitors/:id" render={({ match }) => (
           <CompetitorCard id={match.params.id} />
-        )} /> */}
+        )} />
+
+        <Route path="/categories">
+          <Category />
+        </Route>
 
         <Route exact path="/home">
           {/* //home based category */}
@@ -67,7 +60,6 @@ const App = () => (
 
     </Fragment>
   </Router>
-
 )
 
 export default App;
