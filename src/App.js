@@ -27,19 +27,7 @@ const App = () => (
 
 
         <Route exact path="/competitors">
-<<<<<<< HEAD
           <CompetitorCard />
-=======
-          <div className="backgroundCompetitor">
-            <PageHeading>Competitor Name</PageHeading>
-            <CompetitorCard />
-          </div>
-        </Route>
-
-
-        <Route>
-          <PageHeading>Competitors</PageHeading>
->>>>>>> master
         </Route>
         
 
