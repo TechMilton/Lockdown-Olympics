@@ -18,11 +18,11 @@ class SportsCardDuo extends Component {
                     height: '60rem',
                     backgroundImage: `url(${sports})`
                 }}>
-                    
+
                 <PageHeading>Sports Catgeory</PageHeading>
                 <div className="sportCardGroup">
-                    <SportsCard />
-                    <SportsCard />
+                <SportsCard></SportsCard>
+                <SportsCard></SportsCard>
                 </div>
             </div>
             </>

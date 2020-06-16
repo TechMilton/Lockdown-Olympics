@@ -37,9 +37,9 @@ class SportsCard extends Component {
 
                         <Card.Body className="m-auto">
                             <h1 className='p-2 titleFont'>Sports Name</h1>
-                            <h4 className='p-3'>Description of said sport</h4>
-                            <h6>Start Time: 1900hr </h6>
-                            <p>Arena</p>
+                            <h4 className='p-3 italicFont'>Description of said sport</h4>
+                            <h5 className='titleFont'>Start Time: 1900hr </h5>
+                            <h5 className='titleFont'>Arena: The Downs</h5>
                         </Card.Body>
                     </Card>
                 </div>
