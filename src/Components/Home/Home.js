@@ -31,7 +31,7 @@ class Home extends Component {
                     <div>
                         <Row className="homePageHeader">
                             <Col xs={12} sm={10} md={10} className="colClass">
-                                <Image src={logo} style={{ width: 800, height: 400, }} />
+                                <a href="/"> <Image src={logo} style={{ width: 800, height: 400, }} /> </a>
                                 <h1 className="header">THE <br />LOCKDOWN-OLYMPICS</h1>
                             </Col>
                         </Row>

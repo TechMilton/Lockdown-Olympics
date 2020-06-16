@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Navbar, Nav } from "react-bootstrap";
 
-
-class NavBar extends Comment {
+class NavBar extends Component {
 
     render() {
         return (
