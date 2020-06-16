@@ -24,7 +24,7 @@ const App = () => (
         </Route>
 
 
-        <Route exact path="/competitors">
+        <Route exact path="/competitor">
           <CompetitorCard />
         </Route>
         

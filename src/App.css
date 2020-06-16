@@ -39,6 +39,12 @@ body {
   font-family: 'Roboto Condensed';
 }
 
+.italicFont {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* End of Competitor Card Styling */
+
 .backgroundLanding {
   width: 100vw;
   height: 100vh;
