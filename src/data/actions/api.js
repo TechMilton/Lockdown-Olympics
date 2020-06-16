@@ -1,13 +1,20 @@
 import axios from "../../axios";
 
-export const getCompetitor = (id) => {
-    console.log(id)
+import { saveCompetitors } from "./state";
+
+export const getCompetitors = () => {
     return (dispatch) => {
-        return axios.get(`/games/api/competitors/${id}`).then(({ data }) => {
-            console.log(data)
-            dispatch({
-                type: "BLAH",
+        return axios.get(`/competitors`).then(({ data }) => {
+            dispatch(saveCompetitors(data.data));
             })
-        })
+        }
     }
-}
+
+export const getCompetitor = (id) => {
+    return (dispatch) => {
+        return axios.get(`/competitors/${id}`).then(({ data }) => {
+            dispatch(addCompetitorDetails(data.data));
+            })
+        }
+    }
+
