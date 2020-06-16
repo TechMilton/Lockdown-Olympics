@@ -5,7 +5,15 @@ body {
   padding: 0;
 }
 
+<<<<<<< HEAD
 /* Card Styling */
+=======
+.heading {
+  font-family: 'Roboto Condensed',
+    sans-serif;
+}
+
+>>>>>>> master
 .backgroundCompetitor {
   height: 100vw;
   width: 100%;
@@ -123,4 +131,34 @@ body {
   font-family: 'Roboto Condensed',
     sans-serif;
   background-color: transparent;
+  position: fixed;
+}
+
+/* Categories Page */
+
+.catergoriesCards {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.homeEvents {
+  padding: 50px;
+  margin: 10px;
+  background-color: #AFD3FE;
+}
+
+.gardenEvents {
+  padding: 50px;
+  margin: 10px;
+  background-color: #AFD3FE
+}
+
+.mentalEvents {
+  padding: 50px;
+  margin: 10px;
+  background-color: #AFD3FE
 }

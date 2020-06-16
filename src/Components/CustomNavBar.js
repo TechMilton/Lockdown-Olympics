@@ -4,8 +4,8 @@ import logo from '../imgs/Logo.png';
 
 const CustomNavBar = () => (
 
-    <nav>
-        <Navbar.Brand className="customNavBar">
+    <nav className="customNavBar">
+        <Navbar.Brand>
             <a href="/">
                 <img
                     src={logo}

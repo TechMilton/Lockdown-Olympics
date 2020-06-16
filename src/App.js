@@ -12,6 +12,7 @@ import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard/container';
 import CustomNavBar from './Components/CustomNavBar';
 import SportsCardDuo from './Components/SportsCardDuo';
+import Category from './Components/Category/Category';
 
 
 const App = () => (
@@ -29,13 +30,23 @@ const App = () => (
           <CompetitorCard />
         </Route>
         
+        <Route exact path="/competitors">
+          <CompetitorCard />
+        </Route>
+
+
+
 
         {/* <Route exact path="/competitors">
           {/* //single competitor page */}
-        
+
         <Route path="/competitors/:id" render={({ match }) => (
           <CompetitorCard id={match.params.id} />
-        )} /> */}
+        )} />
+
+        <Route path="/categories">
+          <Category />
+        </Route>
 
         <Route exact path="/home">
           <SportsCardDuo/>
@@ -55,7 +66,6 @@ const App = () => (
 
     </Fragment>
   </Router>
-
 )
 
 export default App;

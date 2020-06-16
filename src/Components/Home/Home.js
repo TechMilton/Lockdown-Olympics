@@ -12,7 +12,7 @@ const Home = () => (
         <div>
             <Row className="homePageHeader">
                 <Col xs={12} sm={10} md={10} className="colClass">
-                    <a href="/"> <Image src={logo} style={{ width: 800, height: 400, }} /> </a>
+                    <Image src={logo} style={{ width: 800, height: 400 }} />
                     <h1 className="header">THE <br />LOCKDOWN-OLYMPICS</h1>
                 </Col>
             </Row>
