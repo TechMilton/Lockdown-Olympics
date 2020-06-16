@@ -1,6 +1,6 @@
 import axios from "../../axios";
 
-import { saveCompetitors } from "./state";
+import { saveCompetitors, addCompetitorDetails } from "./state";
 
 export const getCompetitors = () => {
     return (dispatch) => {
