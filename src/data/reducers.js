@@ -4,6 +4,7 @@ const saveCompetitorsReducer = (state, {competitors}) => {
     return {
         ...state,
         competitors,
+        loaded: true,
     }
 }
 

@@ -15,7 +15,7 @@ import SportsCardDuo from './Components/SportsCardDuo';
 import SportsCard from './Components/SportsCard/SportsCard';
 import Category from './Components/Category/Category';
 import CompetitorList from './Components/CompetitorList';
-
+import Loading from "./Components/Loading";
 
 const App = () => (
   <Router>
@@ -27,10 +27,11 @@ const App = () => (
           <Home>
           </Home>
         </Route>
-
+        <Loading>
         <Route exact path="/competitors">
           <CompetitorList />
         </Route>
+        </Loading>
 
         <Route exact path="/competitor">
           <CompetitorCard />
@@ -44,11 +45,11 @@ const App = () => (
           <CompetitorCard id={match.params.id} />
         )} />
 
-  
+      
         <Route path="/categories">
           <Category />
         </Route>
-
+        
         <Route exact path="/home">
           <SportsCardDuo>
 

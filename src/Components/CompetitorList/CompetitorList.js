@@ -12,10 +12,10 @@ const CompetitorList = (
 
         <div className="backgroundImage">
             <PageHeading>Competitors</PageHeading>
-            <div class="competitorList"> {
+            <div className="competitorList"> {
                 competitors.map((competitor, index) =>
-                    <div class="competitorListItem">
-                        <h2 className="titleFont">{competitors.name}</h2>
+                    <div key={index} className="competitorListItem">
+                        <h2 className="titleFont">{competitor.name}</h2>
                     </div>
                 )}
             </div>
