@@ -4,7 +4,7 @@ class PageHeading extends Component {
   render() {
     const { children } = this.props; 
     return (
-      <header className="header margin-auto">
+      <header className="d-flex flex-column align-items-center p-4 header contrastHeading">
           <h1>{ children }</h1>
       </header>
       );

@@ -10,6 +10,9 @@ import {
 import Home from './Components/Home/Home';
 import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
+import CompetitorCard from './Components/CompetitorCard/CompetitorCard';
+
+import sports from '../src/imgs/sports.jpg';
 
 const App = () => (
   <Router>
@@ -25,6 +28,14 @@ const App = () => (
         </Route>
 
         <Route exact path="/competitors">
+          <div className="backgroundCompetitor">
+            <PageHeading>Competitor Name</PageHeading>
+            <CompetitorCard />
+          </div>
+          </Route>
+
+
+        <Route>
           <PageHeading>Competitors</PageHeading>
         </Route>
 

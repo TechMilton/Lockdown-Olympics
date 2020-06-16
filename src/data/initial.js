@@ -1,0 +1,6 @@
+const initial = {
+    categories: [],
+    sports: [],
+    
+
+};
