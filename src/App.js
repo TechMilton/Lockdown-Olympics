@@ -11,6 +11,7 @@ import Home from './Components/Home/Home';
 import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard/container';
 import CustomNavBar from './Components/CustomNavBar';
+import SportsCardDuo from './Components/SportsCardDuo';
 
 
 const App = () => (
@@ -37,6 +38,7 @@ const App = () => (
         )} /> */}
 
         <Route exact path="/home">
+          <SportsCardDuo/>
           {/* //home based category */}
         </Route>
 

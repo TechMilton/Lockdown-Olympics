@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-/* Competitor Card Styling */
+/* Card Styling */
 .backgroundCompetitor {
   height: 100vw;
   width: 100%;
@@ -35,6 +35,22 @@ body {
   border-width: 5px;
 }
 
+.sportCard {
+  width: 25rem; 
+  height: 35rem; 
+  margin: 2rem;
+  margin-top: 1rem;
+  padding: 3rem; 
+  text-align: -webkit-center;
+  background-color: #afd3ff;
+  border-color:  #fcb131;
+  border-width: 5px;
+}
+
+.sportCardGroup {
+  display: flex;
+}
+
 .titleFont {
   font-family: 'Roboto Condensed';
 }
@@ -43,7 +59,7 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
-/* End of Competitor Card Styling */
+/* End of Card Styling */
 
 .backgroundLanding {
   width: 100vw;

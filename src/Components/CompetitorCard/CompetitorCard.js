@@ -32,32 +32,32 @@ class CompetitorCard extends Component {
             <div style={{
                 height: '60rem',
                 backgroundImage: `url(${sports})`
-                }}>
-            <PageHeading>Competitor Name</PageHeading>
-            <div>
-            <Card className="competitorCard">
-                <Card.Img 
-                    variant="top" 
-                    src={baseball} 
-                    style={{ 
-                        width:'150px', 
-                    }}/>
-                
-                <Card.Body className="m-auto">
-                    <h1 className='p-2 titleFont'>Competitor Name</h1>
-                    <h4 className='p-3 italicFont'>This is the bio of said competitor</h4>
-                    <h6 className="titleFont">Date Of Birth:</h6>
-                    <p className="italicFont">04/05/1995</p>      
-                </Card.Body>
-            </Card>
+            }}>
+                <PageHeading>Competitor Name</PageHeading>
+                <div>
+                    <Card className="competitorCard">
+                        <Card.Img
+                            variant="top"
+                            src={baseball}
+                            style={{
+                                width: '150px',
+                            }} />
+
+                        <Card.Body className="m-auto">
+                            <h1 className='p-2 titleFont'>Competitor Name</h1>
+                            <h4 className='p-3 italicFont'>This is the bio of said competitor</h4>
+                            <h6 className="titleFont">Date Of Birth:</h6>
+                            <p className="italicFont">04/05/1995</p>
+                        </Card.Body>
+                    </Card>
+                </div>
             </div>
-            </div>
-        
-            // <div className="d-flex flex-column align-items-center p-4">
-            //     <h2>{competitor.name}</h2>
-            //     <p>{competitor.bio}</p>
+
+
+            //     <h1>{competitor.name}</h1>
+            //     <h4>{competitor.bio}</h4>
             //     <p>{competitor.dob}</p>
-            // </div>
+
         )
     }
 }
