@@ -6,6 +6,20 @@ body {
 }
 
 .header {
+  font-family: 'Suez One',
+    serif;
+}
+
+.backgroundCompetitor {
+  height: 100vw;
+  width: 100%;
+  background-image: url(./imgs/sports.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.contrastHeading {
+  color: cornsilk;
   font-weight: bold;
   font-family: 'Roboto Condensed',
     sans-serif;
