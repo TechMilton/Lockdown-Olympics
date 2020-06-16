@@ -143,12 +143,15 @@ body {
 
 .catergoriesCards {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   position: fixed;
+  background-image: url(./imgs/bgsport.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .catergoriesTitle {
