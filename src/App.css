@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 
+/* Competitor Card Styling */
 .backgroundCompetitor {
   height: 100vw;
   width: 100%;
@@ -19,6 +20,17 @@ body {
   font-family: 'Roboto Condensed',
     sans-serif;
   font-size: 4rem;
+}
+
+.competitorCard {
+  width: 25rem; 
+  height: 35rem; 
+  margin: auto; 
+  margin-top: 1rem;
+  padding: 3rem; 
+  text-align: -webkit-center;
+  display: flex;
+  background-color: '#afd3ff';
 }
 
 .backgroundLanding {

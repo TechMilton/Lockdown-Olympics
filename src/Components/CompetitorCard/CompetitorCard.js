@@ -35,18 +35,9 @@ class CompetitorCard extends Component {
                 }}>
             <PageHeading>Competitor Name</PageHeading>
             <div>
-            <Card 
-                style={{ 
-                    width: '25rem', 
-                    height: '35rem', 
-                    margin: 'auto', 
-                    marginTop: '1rem',
-                    padding: '3rem', 
-                    textAlign: '-webkit-center',
-                    display: 'flex',
-                    backgroundColor: '#afd3ff',
-                    // backgroundImage: `url(${grass})`
-                    }}>
+            <Card className="competitorCard">
+                {/* // style={{  */}
+
                 <Card.Img 
                     variant="top" 
                     src={baseball} 
