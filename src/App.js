@@ -32,25 +32,30 @@ const App = () => (
             <PageHeading>Competitor Name</PageHeading>
             <CompetitorCard />
           </div>
+          </Route>
+
+
+        <Route>
+          <PageHeading>Competitors</PageHeading>
         </Route>
 
         <Route exact path="/competitor">
-        //single competitor page
+          {/* //single competitor page */}
         </Route>
         {/* <Route path="/competitors/:id" render={({ match }) => (
           <Competitor competitor={match.params.id} />
         )} /> */}
 
         <Route exact path="/home">
-        //home based category
+          {/* //home based category */}
         </Route>
 
         <Route exact path="/garden">
-        //garden based category 
+          {/* //garden based category  */}
         </Route>
 
         <Route exact path="mad">
-        //mad category 
+          {/* //mad category  */}
         </Route>
 
         <FourOhFour />
