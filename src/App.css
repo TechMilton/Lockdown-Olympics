@@ -148,18 +148,20 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
+  position: fixed;
 }
 
 .catergoriesTitle {
-  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   margin-top: 20px;
   color: #fcb131;
+
 }
 
 .homeEvents {
+  height: 500px;
   padding: 50px;
   margin: 20px;
   background-color: #AFD3FE;
@@ -168,7 +170,13 @@ body {
   box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
 }
 
+.homeLink {
+  text-decoration: none !important;
+  color: black;
+}
+
 .gardenEvents {
+  height: 500px;
   padding: 50px;
   margin: 20px;
   background-color: #AFD3FE;
@@ -177,7 +185,13 @@ body {
   box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
 }
 
+.gardenLink {
+  text-decoration: none !important;
+  color: black;
+}
+
 .mentalEvents {
+  height: 500px;
   padding: 50px;
   margin: 20px;
   background-color: #AFD3FE;
@@ -186,11 +200,26 @@ body {
   box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
 }
 
+.mentalLink {
+  text-decoration: none !important;
+  color: black;
+}
+
 .foodEvents {
+  height: 500px;
   padding: 50px;
   margin: 20px;
   background-color: #AFD3FE;
-  -webkit-box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1);
-  -moz-box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1);
-  box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1)
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  box-shadow: 0px -8px 0px 0px rgba(252, 177, 49)
+}
+
+.foodLink {
+  text-decoration: none !important;
+  color: black;
+}
+
+.line {
+  text-decoration: line-through;
 }
