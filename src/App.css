@@ -5,6 +5,14 @@ body {
   padding: 0;
 }
 
+/* Card Styling */
+
+.heading {
+  font-family: 'Roboto Condensed',
+    sans-serif;
+}
+
+
 .backgroundCompetitor {
   height: 100vw;
   width: 100%;
@@ -14,12 +22,51 @@ body {
 }
 
 .contrastHeading {
-  color: cornsilk;
+  color: #fcb131;
   font-weight: bold;
   font-family: 'Roboto Condensed',
     sans-serif;
   font-size: 4rem;
 }
+
+.competitorCard {
+  width: 25rem;
+  height: 35rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 3rem;
+  text-align: -webkit-center;
+  display: flex;
+  background-color: #afd3ff;
+  border-color: #fcb131;
+  border-width: 5px;
+}
+
+.sportCard {
+  width: 25rem;
+  height: 35rem;
+  margin: 2rem;
+  margin-top: 1rem;
+  padding: 3rem;
+  text-align: -webkit-center;
+  background-color: #afd3ff;
+  border-color: #fcb131;
+  border-width: 5px;
+}
+
+.sportCardGroup {
+  display: flex;
+}
+
+.titleFont {
+  font-family: 'Roboto Condensed';
+}
+
+.italicFont {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* End of Card Styling */
 
 .backgroundLanding {
   width: 100vw;
@@ -89,33 +136,61 @@ body {
     sans-serif;
   background-color: transparent;
   position: fixed;
+
 }
 
 /* Categories Page */
 
 .catergoriesCards {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
+.catergoriesTitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #fcb131;
+}
+
 .homeEvents {
   padding: 50px;
-  margin: 10px;
+  margin: 20px;
   background-color: #AFD3FE;
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
+  box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
 }
 
 .gardenEvents {
   padding: 50px;
-  margin: 10px;
-  background-color: #AFD3FE
+  margin: 20px;
+  background-color: #AFD3FE;
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
+  box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
 }
 
 .mentalEvents {
   padding: 50px;
-  margin: 10px;
-  background-color: #AFD3FE
+  margin: 20px;
+  background-color: #AFD3FE;
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
+  box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
+}
+
+.foodEvents {
+  padding: 50px;
+  margin: 20px;
+  background-color: #AFD3FE;
+  -webkit-box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1);
+  -moz-box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1);
+  box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1)
 }
