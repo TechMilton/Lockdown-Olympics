@@ -11,7 +11,6 @@ import Home from './Components/Home/Home';
 import PageHeading from './Components/PageHeading';
 import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard/container';
-import CompetitorCard from './Components/CompetitorCard/CompetitorCard';
 import CustomNavBar from './Components/CustomNavBar';
 
 import sports from '../src/imgs/sports.jpg';
