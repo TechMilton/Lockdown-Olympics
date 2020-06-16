@@ -5,11 +5,6 @@ body {
   padding: 0;
 }
 
-.header {
-  font-family: 'Suez One',
-    serif;
-}
-
 .backgroundCompetitor {
   height: 100vw;
   width: 100%;
@@ -82,4 +77,10 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+}
+
+.customNavBar {
+  font-family: 'Roboto Condensed',
+    sans-serif;
+  background-color: transparent;
 }
