@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Card';
 
+
 class Category extends Component {
 
     render() {
         return (
             <>
                 <div class="catergoriesCards">
+                    <h1>Events</h1>
                     {/* Home Events */}
                     <Card className="homeEvents" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="https://img.icons8.com/pastel-glyph/64/000000/home.png" />
