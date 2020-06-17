@@ -9,16 +9,24 @@ const saveCompetitorsReducer = (state, {competitors}) => {
 }
 
 const addCompetitorDetailsReducer = (state, data) => {
-    return {
-        ...state,
-        competitors: state.competitors.map(competitor => competitor.id === data.competitor.id ? 
+    let newCompetitors = state.competitors;
+    if(newCompetitors.length === 0) {
+        newCompetitors = data.competitor;
+    } else {
+        newCompetitors = newCompetitors.map(competitor => 
+        competitor.id === data.competitor.id ? 
             {...competitor, 
+            name: data.competitor.name,
             bio: data.competitor.bio,
             dob: data.competitor.dob,
             sport_id: data.competitor.sport_id,
             img_pathway: data.competitor.img_pathway,
             detailsAdded: true, ///add detailsAdded so track if details previously added from api
-        } : competitor),
+        } : competitor)
+    }
+    return {
+        ...state,
+        competitors: [newCompetitors],
     }
 }
 
