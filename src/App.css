@@ -86,10 +86,7 @@ body {
 
 .backgroundLanding {
   width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #afd3ff;
+  height: 80vh;
 }
 
 .cardLinks {
@@ -120,7 +117,7 @@ body {
 }
 
 .homePageHeader {
-  height: 68vh;
+  height: 69vh;
   justify-content: center;
   text-align: center;
 }
@@ -133,6 +130,7 @@ body {
 .homePageheaderText {
   font-family: 'Roboto Condensed',
     sans-serif;
+  font-size: 50px;
 }
 
 .colClass {
@@ -150,7 +148,6 @@ body {
 .customNavBar {
   font-family: 'Roboto Condensed',
     sans-serif;
-  background-color: transparent;
   position: fixed;
 
 }
@@ -159,54 +156,89 @@ body {
 
 .catergoriesCards {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-image: url(./imgs/bgsport.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .catergoriesTitle {
-  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   margin-top: 20px;
   color: #fcb131;
+
 }
 
 .homeEvents {
+  height: 500px;
   padding: 50px;
-  margin: 20px;
   background-color: #AFD3FE;
   -webkit-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
   box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
 }
 
-.gardenEvents {
-  padding: 50px;
+.homeLink {
+  text-decoration: none !important;
+  color: black;
   margin: 20px;
+}
+
+.gardenEvents {
+  height: 500px;
+  padding: 50px;
   background-color: #AFD3FE;
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
 }
 
-.mentalEvents {
-  padding: 50px;
+.gardenLink {
+  text-decoration: none !important;
+  color: black;
   margin: 20px;
+}
+
+.mentalEvents {
+  height: 500px;
+  padding: 50px;
   background-color: #AFD3FE;
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
 }
 
-.foodEvents {
-  padding: 50px;
+.mentalLink {
+  text-decoration: none !important;
+  color: black;
   margin: 20px;
+}
+
+.foodEvents {
+  height: 500px;
+  padding: 50px;
   background-color: #AFD3FE;
-  -webkit-box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1);
-  -moz-box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1);
-  box-shadow: 0px -8px 0px 0px #fcb131(0, 166, 81, 1)
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  box-shadow: 0px -8px 0px 0px rgba(252, 177, 49)
+}
+
+.foodLink {
+  text-decoration: none !important;
+  color: black;
+  margin: 20px;
+}
+
+.lineColor {
+  color: rgba(238, 51, 79, 1);
+}
+
+.line {
+  text-decoration: line-through;
 }
