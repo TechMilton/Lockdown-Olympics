@@ -63,6 +63,10 @@ const App = () => (
           {/* //mental category  */}
         </Route>
 
+        <Route exact path="/404">
+          <FourOhFour></FourOhFour>
+        </Route>
+
         <FourOhFour />
       </Switch>
 
