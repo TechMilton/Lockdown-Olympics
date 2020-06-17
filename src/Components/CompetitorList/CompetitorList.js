@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import sports from '../../../src/imgs/sports.jpg';
 import Alert from 'react-bootstrap/Alert'
@@ -20,10 +21,12 @@ const CompetitorList = (
         <div className="backgroundImage">
             <PageHeading>Competitors</PageHeading>
             <Loading loaded={competitors.length}>
-                 <div className="competitorList"> {
+                <div className="competitorList"> {
                     competitors.map((competitor, index) =>
                         <div key={index} className="competitorListItem">
-                            <a href="/competitor"><h2 className="titleFont">{competitor.name}</h2></a>
+                            <Link to={`/competitors/${competitor.id}`}>
+                                <h2 className="titleFont">{competitor.name}</h2>
+                            </Link>
                         </div>
                     )}
                 </div>

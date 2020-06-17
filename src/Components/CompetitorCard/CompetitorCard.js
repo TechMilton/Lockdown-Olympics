@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -23,7 +24,7 @@ const CompetitorCard = (
     return (<div className="backgroundImage">
         <PageHeading>Competitor Name</PageHeading>
         <div>
-            { competitor === undefined ? <Loading loaded={false}/> :
+            {competitor === undefined ? <Loading loaded={false} /> :
                 <Card className="competitorCard">
                     <Card.Img
                         variant="top"
@@ -40,13 +41,18 @@ const CompetitorCard = (
                         <h6 className="titleFont">Competing in:</h6>
                         <p className="italicFont">{competitor.sport}</p>
                     </Card.Body>
+                    <div className="competitorListItem">
+                        <Link to={`/competitors`}>
+                            <h2 className="titleFont">Back to competitors</h2>
+                        </Link>
+                    </div>
                 </Card>
-                }
+            }
         </div>
     </div>
 
     );
-                    
+
 
 }
 
