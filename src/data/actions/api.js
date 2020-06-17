@@ -30,9 +30,7 @@ export const getCompetitor = (id) => (dispatch, getState) => {
 };
 
 export const getSports = (id) => (dispatch, getState) => {
-    return (dispatch) => {
         return axios.get(`/categories/${id}/sports`).then(({ data }) => {
             dispatch(saveSports(data.data));
         });
     }
-}
