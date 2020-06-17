@@ -23,7 +23,7 @@ const CompetitorList = (
                 <div className="competitorList"> {
                     competitors.map((competitor, index) =>
                         <div key={index} className="competitorListItem">
-                            <h2 className="titleFont">{competitor.name}</h2>
+                            <a href="/competitor"><h2 className="titleFont">{competitor.name}</h2></a>
                         </div>
                     )}
                 </div>
