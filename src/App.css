@@ -90,10 +90,14 @@ body {
   border-color:#afd3ff;
 }
 
-.competitorName {
+.highlightText {
+  color: rgb(245, 240, 234);
 }
 
 /* End of Competitor List Styling */
+
+
+/*Home Page Styling */
 
 .backgroundLanding {
   width: 100vw;
