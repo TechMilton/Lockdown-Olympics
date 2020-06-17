@@ -34,9 +34,11 @@ const CompetitorCard = (
 
                     <Card.Body className="m-auto">
                         <h1 className='p-2 titleFont'>{competitor.name}</h1>
-                        <h4 className='p-3 italicFont'>This is the bio of said competitor</h4>
+                        <p className='p-3 italicFont'>{competitor.bio}</p>
                         <h6 className="titleFont">Date Of Birth:</h6>
-                        <p className="italicFont">04/05/1995</p>
+                        <p className="italicFont">{competitor.dob}</p>
+                        <h6 className="titleFont">Competing in:</h6>
+                        <p className="italicFont">{competitor.sport}</p>
                     </Card.Body>
                 </Card>
                 }
