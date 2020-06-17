@@ -13,7 +13,8 @@ body {
 
 .backgroundImage {
   height: 100vw;
-  width: 100%;
+  width: 100vw;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
   background-image: url(./imgs/sports.jpg);
