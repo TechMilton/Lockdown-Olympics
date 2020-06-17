@@ -9,7 +9,7 @@ import {
 
 import Home from './Components/Home/Home';
 import FourOhFour from './Components/FourOhFour';
-import CompetitorCard from './Components/CompetitorCard/container';
+import CompetitorCard from './Components/CompetitorCard';
 import CustomNavBar from './Components/CustomNavBar';
 import SportsCardDuo from './Components/SportsCardDuo';
 import SportsCard from './Components/SportsCard/SportsCard';
@@ -30,18 +30,9 @@ const App = () => (
           <CompetitorList />
         </Route>
 
-
-        <Route exact path="/competitor">
-          <CompetitorCard />
-        </Route>
-
-        {/* <Route exact path="/competitors">
-          {/* //single competitor page */}
-
         <Route path="/competitors/:id" render={({ match }) => (
-          <CompetitorCard id={match.params.id} />
+          <CompetitorCard competitorId={match.params.id} />
         )} />
-
 
         <Route path="/categories">
           <CustomNavBar />

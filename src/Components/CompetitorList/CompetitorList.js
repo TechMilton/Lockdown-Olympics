@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import sports from '../../../src/imgs/sports.jpg';
 import Alert from 'react-bootstrap/Alert'
@@ -23,7 +24,9 @@ const CompetitorList = (
                 <div className="competitorList"> {
                     competitors.map((competitor, index) =>
                         <div key={index} className="competitorListItem">
-                            <h2 className="titleFont">{competitor.name}</h2>
+                            <Link to={`/competitors/${competitor.id}`}>
+                                <h2 className="titleFont">{competitor.name}</h2>
+                            </Link>
                         </div>
                     )}
                 </div>
