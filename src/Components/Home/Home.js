@@ -12,7 +12,7 @@ const Home = () => (
         <div>
             <Row className="homePageHeader">
                 <Col xs={12} sm={10} md={10} className="colClass">
-                    <Image src={logo} style={{ width: 800, height: 400 }} />
+                    <Image src={logo} style={{ width: 900, height: 500 }} />
                     <h1 className="homePageheaderText">THE <br />LOCKDOWN-OLYMPICS</h1>
                 </Col>
             </Row>
@@ -20,10 +20,10 @@ const Home = () => (
         <nav className="homePageCards">
             <Image src={grass} className="grass" />
             <div className="Links link1">
-                <a className="cardLinks" href="/"><h3>EVENT CATEGORIES</h3></a>
+                <a className="cardLinks" href="/categories"><h3>EVENT CATEGORIES</h3></a>
             </div>
             <div className="Links link2">
-                <a className="cardLinks" href="/"><h3>COMPETITORS</h3></a>
+                <a className="cardLinks" href="/competitors"><h3>COMPETITORS</h3></a>
             </div>
         </nav >
     </div>

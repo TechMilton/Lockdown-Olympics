@@ -15,7 +15,7 @@ class Category extends Component {
                         {/* Home Events */}
                         <a className="homeLink" href="/">
                             <Card className="homeEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/pastel-glyph/64/000000/home.png" />
+                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/prefab-house.png" />
                                 <Card.Body>
                                     <Card.Title style={{
                                         fontSize: "2rem", fontWeight: "500",
@@ -32,7 +32,7 @@ class Category extends Component {
                         {/* Garden Events */}
                         <a className="gardenLink" href="/">
                             <Card className="gardenEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/50/000000/spade.png" />
+                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/garden.png" />
                                 <Card.Body>
                                     <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Garden Events</Card.Title>
                                     <hr />
@@ -47,9 +47,9 @@ class Category extends Component {
                         {/* Mental Events */}
                         <a className="mentalLink" href="/">
                             <Card className="mentalEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/50/000000/brain.png" />
+                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/skull.png" />
                                 <Card.Body>
-                                    <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Mental Events</Card.Title>
+                                    <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Extreme Events</Card.Title>
                                     <hr />
                                     <Card.Text>
                                         Donec vitae velit a arcu ultrices pulvinar in quis orci.
@@ -62,7 +62,7 @@ class Category extends Component {
                         {/* Food Events */}
                         <a className="foodLink" href="/">
                             <Card className="foodEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/material/24/000000/hamburger--v1.png" />
+                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/hamburger.png" />
                                 <Card.Body>
                                     <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Food Events</Card.Title>
                                     <hr />
