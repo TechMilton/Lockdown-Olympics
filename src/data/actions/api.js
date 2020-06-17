@@ -1,6 +1,6 @@
 import axios from "../../axios";
 
-import { saveCompetitors } from "./state";
+import { saveCompetitors, addCompetitorDetails } from "./state";
 
 export const getCompetitors = () => {
     return (dispatch) => {
@@ -17,4 +17,15 @@ export const getCompetitor = (id) => {
             })
         }
     }
+
+///from our discussion with Jack
+// export const getCompetitor = (id) => (dispatch, getState) => {
+//     const isComplete = getState().competitors.find(competitor => competitor.id === id && competitor.detailsAdded);
+
+//     if (!isComplete) {
+//         axios.get(`/competitors/${id}`).then(({ data }) => {
+//             dispatch(addCompetitorDetails(data.data));
+//             });
+//         }
+// };
 

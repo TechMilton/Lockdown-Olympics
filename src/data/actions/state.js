@@ -5,9 +5,9 @@ export const saveCompetitors  = ( data ) => {
     };
 }
 
-
-
-
-
-
-// export const addCompetitorDetails ( )
+export const addCompetitorDetails = ( data ) => {
+    return {
+        type: "ADD_DETAILS_TO_COMPETITOR",
+        competitor: data,
+    }
+}

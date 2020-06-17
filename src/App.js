@@ -27,10 +27,10 @@ const App = () => (
           <Home>
           </Home>
         </Route>
-
         <Route exact path="/competitors">
           <CompetitorList />
         </Route>
+
 
         <Route exact path="/competitor">
           <CompetitorCard />
@@ -44,11 +44,11 @@ const App = () => (
           <CompetitorCard id={match.params.id} />
         )} />
 
-  
+      
         <Route path="/categories">
           <Category />
         </Route>
-
+        
         <Route exact path="/home">
           <SportsCardDuo>
 
