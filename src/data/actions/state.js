@@ -11,3 +11,10 @@ export const addCompetitorDetails = ( data ) => {
         competitor: data,
     }
 }
+
+export const saveSports = ( data ) => {
+    return {
+        type: "SAVE_SPORTS",
+        sports: data,
+    }
+}

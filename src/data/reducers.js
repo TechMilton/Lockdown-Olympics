@@ -28,10 +28,18 @@ const addCompetitorDetailsReducer = (state, data) => {
     }
 }
 
+const saveSportsReducer = (state, { sports }) => {
+    return {
+        ...state,
+        sports,
+    }
+}
+
 const reducer = (state, action) => {
     switch (action.type) {
         case "SAVE_COMPETITORS": return saveCompetitorsReducer(state, action);
         case "ADD_DETAILS_TO_COMPETITOR": return addCompetitorDetailsReducer(state, action);
+        case "SAVE_SPORTS": return saveSportsReducer(state, action);
         default: return state;
     }
 

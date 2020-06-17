@@ -1,51 +1,52 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import baseball from '../../imgs/baseball.png';
 
 import PageHeading from '../PageHeading';
 
-class SportsCard extends Component {
-    constructor(props) {
-        super(props);
+import Loading from "../Loading";
 
-        this.state = {
-            sport: [],
-
-        }
+const SportsCard = (
+    {
+        sports,
+        handleSportsLoad,
     }
-
-    componentDidMount() {
-        let { id } = this.props;
-        // this.props.getSport(id)
-    }
-
-
-    render() {
-        let { sport } = this.state;
+) => {
+    useEffect(() => {
+        handleSportsLoad()
+    }, [])
 
 
-        return (
-            <>
-                <div>
-                    <Card className="sportCard">
-                        <Card.Img
-                            variant="top"
-                            src={baseball}
-                            style={{
-                                width: '150px',
-                            }} />
+    return (
+        <div className="backgroundImage">
 
-                        <Card.Body className="m-auto">
-                            <h1 className='p-2 titleFont'>Sports Name</h1>
-                            <h4 className='p-3 italicFont'>Description of said sport</h4>
-                            <h5 className='titleFont'>Start Time: 1900hr </h5>
-                            <h5 className='titleFont'>Arena: The Downs</h5>
-                        </Card.Body>
-                    </Card>
+            <PageHeading>Sports Category</PageHeading>
+            <Loading loaded={sports.length}>
+                <div className="sportCardGroup">
+                    {sports.map((sport, index) =>
+                        <Card key={index} className="sportCard">
+                            <Card.Img
+                                variant="top"
+                                src={baseball}
+                                style={{
+                                    width: '150px',
+                                }} />
+
+                            <Card.Body className="m-auto">
+                                <h1 className='p-2 titleFont'>Sports Name</h1>
+                                <h4 className='p-3 italicFont'>Description of said sport</h4>
+                                <h5 className='titleFont'>Start Time: 1900hr </h5>
+                                <h5 className='titleFont'>Arena: The Downs</h5>
+                            </Card.Body>
+                        </Card>
+                    )}
                 </div>
-            </>
-        )
-    }
+
+            </Loading>
+        </div>
+    )
 }
+
 
 export default SportsCard;
