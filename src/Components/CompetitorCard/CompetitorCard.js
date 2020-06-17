@@ -20,7 +20,7 @@ const CompetitorCard = (
         handleCompetitorLoad()
     }, [])
 
-    console.log(competitor);
+    
     return (<div className="backgroundImage">
         <PageHeading>Competitor Name</PageHeading>
         <div>
