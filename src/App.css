@@ -14,9 +14,9 @@ body {
 .backgroundImage {
   height: 100vw;
   width: 100vw;
-  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
   background-repeat: no-repeat;
-  object-fit: cover;
   background-image: url(./imgs/sports.jpg);
 }
 
@@ -72,6 +72,8 @@ body {
 
 .competitorList {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .competitorListItem {
@@ -79,10 +81,23 @@ body {
   width: 500px;
   background-color: #fcb131;
   margin: auto;
+  margin-top: 2rem;
   border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-width: 5px;
+  border-color:#afd3ff;
+}
+
+.highlightText {
+  color: rgb(245, 240, 234);
 }
 
 /* End of Competitor List Styling */
+
+
+/*Home Page Styling */
 
 .backgroundLanding {
   width: 100vw;
@@ -223,6 +238,13 @@ body {
 .foodEvents {
   height: 500px;
   padding: 50px;
+  margin: 10px;
+  background-color: #AFD3FE;
+}
+
+.progress {
+  width: 60%;
+  margin: auto;
   background-color: #AFD3FE;
   -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);

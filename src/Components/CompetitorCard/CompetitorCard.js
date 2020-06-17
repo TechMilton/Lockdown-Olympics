@@ -42,14 +42,12 @@ const CompetitorCard = (
         </div>
     </div>
 
-
-        //     <h1>{competitor.name}</h1>
-        //     <h4>{competitor.bio}</h4>
-        //     <p>{competitor.dob}</p>
-
-    )
+    );
+                    
 
 }
+
+
 
 
 export default CompetitorCard;
