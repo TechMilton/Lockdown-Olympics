@@ -34,7 +34,6 @@ const App = () => (
           <CompetitorCard competitorId={match.params.id} />
         )} />
 
-
         <Route path="/categories">
           <CustomNavBar />
           <Category />
