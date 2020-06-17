@@ -6,19 +6,18 @@ body {
 }
 
 /* Card Styling */
-
 .heading {
   font-family: 'Roboto Condensed',
     sans-serif;
 }
 
-
-.backgroundCompetitor {
+.backgroundImage {
   height: 100vw;
-  width: 100%;
-  background-image: url(./imgs/sports.jpg);
-  object-fit: cover;
+  width: 100vw;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
+  background-image: url(./imgs/sports.jpg);
 }
 
 .contrastHeading {
@@ -45,8 +44,8 @@ body {
 .sportCard {
   width: 25rem;
   height: 35rem;
-  margin: 2rem;
-  margin-top: 1rem;
+  margin: auto;
+  margin-top: 3rem;
   padding: 3rem;
   text-align: -webkit-center;
   background-color: #afd3ff;
@@ -56,6 +55,7 @@ body {
 
 .sportCardGroup {
   display: flex;
+  justify-content: space-around;
 }
 
 .titleFont {
@@ -67,6 +67,22 @@ body {
 }
 
 /* End of Card Styling */
+
+/* Competitor List Styling */
+
+.competitorList {
+  display: flex;
+}
+
+.competitorListItem {
+  height: 75px;
+  width: 500px;
+  background-color: #fcb131;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+/* End of Competitor List Styling */
 
 .backgroundLanding {
   width: 100vw;
