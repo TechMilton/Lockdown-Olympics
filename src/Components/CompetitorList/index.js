@@ -9,10 +9,8 @@ const mapStateToProps = ({ competitors }) => {
     };
 };
 
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     handleIncrement: () => dispatch(patchScoreP1()),
-//   };
-// };
+const mapDispatchToProps = (dispatch) => ({
+  handleLoad: () => dispatch(getCompetitors()),
+})
 
-export default connect(mapStateToProps)(CompetitorList);
+export default connect(mapStateToProps, mapDispatchToProps)(CompetitorList);

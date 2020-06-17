@@ -16,7 +16,8 @@ const addCompetitorDetailsReducer = (state, data) => {
             bio: data.competitor.bio,
             dob: data.competitor.dob,
             sport_id: data.competitor.sport_id,
-            img_pathway: data.competitor.img_pathway
+            img_pathway: data.competitor.img_pathway,
+            detailsAdded: true, ///add detailsAdded so track if details previously added from api
         } : competitor),
     }
 }
