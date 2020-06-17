@@ -1,6 +1,6 @@
 import initial from './initial';
 
-const saveCompetitorsReducer = (state, {competitors}) => {
+const saveCompetitorsReducer = (state, { competitors }) => {
     return {
         ...state,
         competitors,
@@ -10,23 +10,21 @@ const saveCompetitorsReducer = (state, {competitors}) => {
 
 const addCompetitorDetailsReducer = (state, data) => {
     let newCompetitors = state.competitors;
-    if(newCompetitors.length === 0) {
-        newCompetitors = data.competitor;
+    if (newCompetitors.find((competitor) => competitor.id === data.competitor.id)) {
+        newCompetitors = newCompetitors.map(competitor =>
+            competitor.id === data.competitor.id ?
+                {
+                    ...competitor,
+                    ...data.competitor,
+                    detailsAdded: true, ///add detailsAdded so track if details previously added from api
+                } : competitor)
     } else {
-        newCompetitors = newCompetitors.map(competitor => 
-        competitor.id === data.competitor.id ? 
-            {...competitor, 
-            name: data.competitor.name,
-            bio: data.competitor.bio,
-            dob: data.competitor.dob,
-            sport_id: data.competitor.sport_id,
-            img_pathway: data.competitor.img_pathway,
-            detailsAdded: true, ///add detailsAdded so track if details previously added from api
-        } : competitor)
+        newCompetitors.push(data.competitor);
     }
+
     return {
         ...state,
-        competitors: [newCompetitors],
+        competitors: newCompetitors,
     }
 }
 
@@ -36,7 +34,7 @@ const reducer = (state, action) => {
         case "ADD_DETAILS_TO_COMPETITOR": return addCompetitorDetailsReducer(state, action);
         default: return state;
     }
-    
+
 }
 
 export default reducer;
