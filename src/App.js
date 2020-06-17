@@ -30,18 +30,9 @@ const App = () => (
           <CompetitorList />
         </Route>
 
-
-        <Route exact path="/competitor">
-          <CompetitorCard />
-        </Route>
-
-        {/* <Route exact path="/competitors">
-          {/* //single competitor page */}
-
         <Route path="/competitors/:id" render={({ match }) => (
           <CompetitorCard competitorId={match.params.id} />
         )} />
-
 
         <Route path="/categories">
           <CustomNavBar />
