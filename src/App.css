@@ -42,6 +42,10 @@ body {
 }
 
 .sportCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 25rem;
   height: 35rem;
   margin: 3rem;
@@ -74,8 +78,7 @@ body {
   color: black;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5rem;
-  border: 1px solid black;
-  border-radius: 0.25rem;
+  border: 2px solid black;
 }
 
 /* End of Card Styling */

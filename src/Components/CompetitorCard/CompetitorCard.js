@@ -20,7 +20,7 @@ const CompetitorCard = (
         handleCompetitorLoad()
     }, [])
 
-    
+
     return (<div className="backgroundImage">
         <PageHeading>Competitor Name</PageHeading>
         <div>
@@ -41,11 +41,9 @@ const CompetitorCard = (
                         <h6 className="titleFont">Competing in:</h6>
                         <p className="italicFont">{competitor.sport}</p>
                     </Card.Body>
-                    <div className="competitorListItem">
-                        <Link to={`/competitors`}>
-                            <h2 className="titleFont">Back to competitors</h2>
-                        </Link>
-                    </div>
+                    <Link to={`/competitors`} >
+                        <button className="backBtn"><i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to competitors</button>
+                    </Link>
                 </Card>
             }
         </div>
