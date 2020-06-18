@@ -160,11 +160,19 @@ body {
   padding: 0;
 }
 
+/* Nav Bar Styling */
+
 .customNavBar {
   font-family: 'Roboto Condensed',
     sans-serif;
   position: fixed;
+  width: 100vw;
+  background-color: white;
+  align-items: center;
+}
 
+.nav-item {
+  font-size: 20px;
 }
 
 /* Categories Page */
@@ -209,19 +217,19 @@ body {
   box-shadow: 8px -8px 25px 1px rgba(238, 51, 79, 1);
 }
 
-.eventLink:nth-child(2) .categoryCard  {
+.eventLink:nth-child(2) .categoryCard {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   box-shadow: 8px -8px 25px 1px rgba(0, 10, 101, 1);
 }
 
-.eventLink:nth-child(3) .categoryCard  {
+.eventLink:nth-child(3) .categoryCard {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   box-shadow: 8px -8px 25px 1px rgba(0, 166, 81, 1);
 }
 
-.eventLink:nth-child(4) .categoryCard  {
+.eventLink:nth-child(4) .categoryCard {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   box-shadow: 8px -8px 25px 1px rgba(252, 177, 49);
