@@ -9,13 +9,11 @@ class Registration extends Component {
     constructor(props) {
         super(props);
 
-        let { name, bio, dob, sportId } = props;
-
         this.state = {
-            name,
-            bio,
-            dob,
-            sportId,
+            name: "",
+            bio: "",
+            dob: "",
+            sportId: "1",
         };
 
         this.handleName = this.handleName.bind(this);
