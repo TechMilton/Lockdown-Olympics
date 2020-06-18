@@ -22,7 +22,7 @@ import CompetitorList from './Components/CompetitorList';
 import Registration from './Components/Registration';
 
 const App = () => (
-  <Router history={ history }>
+  <Router history={history}>
     <Fragment>
       <Switch>
 

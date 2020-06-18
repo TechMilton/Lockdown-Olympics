@@ -17,23 +17,18 @@ const CustomNavBar = () => (
                     }} />
             </a>
         </Navbar.Brand>
-        <Nav className="CustomNavItems">
-            <Nav.Item className="nav-item">
+        <Nav className="nav-item">
+            <Nav.Item>
                 <Nav.Link href="/">Catergories</Nav.Link>
             </Nav.Item>
-            <Nav.Item className="nav-item">
+            <Nav.Item>
                 <Nav.Link href="/">Competitors</Nav.Link>
             </Nav.Item>
-            <Nav.Item className="nav-item">
+            <Nav.Item >
                 <Nav.Link href="/">Registration</Nav.Link>
             </Nav.Item>
         </Nav>
     </Nav >
-
-    //Register
-    //Catergories
-    //Competitors
-
 
 )
 
