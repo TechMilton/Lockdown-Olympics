@@ -190,56 +190,78 @@ body {
 
 }
 
-.homeEvents {
-  height: 500px;
+.eventLink {
+  text-decoration: none !important;
+  color: black;
+  margin: 20px;
+}
+
+.categoryCard {
+  width: 18rem;
+  height: 350px;
   padding: 50px;
-  background-color: #AFD3FE;
+  /* background-color: #AFD3FE; */
+  background-color: rgb(255, 255, 255);
+}
+
+.eventLink:nth-child(1) .categoryCard {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
-  box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
+  box-shadow: 8px -8px 25px 1px rgba(238, 51, 79, 1);
+  /* border: 8px solid rgba(238, 51, 79, 1); */
 }
 
-.homeLink {
-  text-decoration: none !important;
-  color: black;
-  margin: 20px;
-}
-
-.gardenEvents {
-  height: 500px;
-  padding: 50px;
-  background-color: #AFD3FE;
+.eventLink:nth-child(2) .categoryCard  {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
-  box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
+  /* box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1); */
+  box-shadow: 8px -8px 25px 1px rgba(0, 10, 101, 1);
 }
 
-.gardenLink {
-  text-decoration: none !important;
-  color: black;
-  margin: 20px;
-}
-
-.mentalEvents {
-  height: 500px;
-  padding: 50px;
-  background-color: #AFD3FE;
+.eventLink:nth-child(3) .categoryCard  {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
-  box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
+  /* box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1); */
+  box-shadow: 8px -8px 25px 1px rgba(0, 166, 81, 1);
 }
 
-.mentalLink {
-  text-decoration: none !important;
-  color: black;
-  margin: 20px;
+.eventLink:nth-child(4) .categoryCard  {
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  /* box-shadow: 0px -8px 0px 0px rgba(252, 177, 49) */
+  box-shadow: 8px -8px 25px 1px rgba(252, 177, 49);
 }
 
-.foodEvents {
-  height: 500px;
-  padding: 50px;
-  margin: 10px;
-  background-color: #AFD3FE;
+.eventLink:nth-child(1) i {
+  color: rgba(238, 51, 79, 1);
+}
+
+.eventLink:nth-child(2) i {
+  color: rgba(0, 10, 101, 1);
+}
+
+.eventLink:nth-child(3) i {
+  color: rgba(0, 166, 81, 1);
+}
+
+.eventLink:nth-child(4) i {
+  color: rgba(252, 177, 49);
+}
+
+.eventLink:nth-child(1):hover {
+  color: rgba(238, 51, 79, 1);
+}
+
+.eventLink:nth-child(2):hover {
+  color: rgba(0, 10, 101, 1);
+}
+
+.eventLink:nth-child(3):hover {
+  color: rgba(0, 166, 81, 1);
+}
+
+.eventLink:nth-child(4):hover {
+  color: rgba(252, 177, 49);
 }
 
 .progress {
@@ -249,12 +271,6 @@ body {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   box-shadow: 0px -8px 0px 0px rgba(252, 177, 49)
-}
-
-.foodLink {
-  text-decoration: none !important;
-  color: black;
-  margin: 20px;
 }
 
 .lineColor {

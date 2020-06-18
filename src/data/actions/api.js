@@ -1,6 +1,6 @@
 import axios from "../../axios";
 
-import { saveCompetitors, addCompetitorDetails, saveSports } from "./state";
+import { saveCompetitors, addCompetitorDetails, saveCategories, saveSports } from "./state";
 
 export const getCompetitors = () => {
     return (dispatch) => {
@@ -19,6 +19,14 @@ export const getCompetitor = (id) => (dispatch, getState) => {
         });
     }
 };
+
+export const getCategories = () => {
+    return (dispatch) => {
+        return axios.get(`/categories`).then(({ data }) => {
+            dispatch(saveCategories(data));
+        })
+    }
+}
 
 export const getSports = (id) => (dispatch, getState) => {
         return axios.get(`/categories/${id}/sports`).then(({ data }) => {

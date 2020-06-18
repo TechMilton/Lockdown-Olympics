@@ -12,8 +12,11 @@ import Home from './Components/Home/Home';
 import FourOhFour from './Components/FourOhFour';
 import CompetitorCard from './Components/CompetitorCard';
 import CustomNavBar from './Components/CustomNavBar';
+
+import Category from './Components/Category';
+
 import SportsCard from './Components/SportsCard';
-import Category from './Components/Category/Category';
+
 import CompetitorList from './Components/CompetitorList';
 
 
