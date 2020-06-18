@@ -1,14 +1,14 @@
 import axios from "../../axios";
 
-import { saveCompetitors, addCompetitorDetails } from "./state";
+import { saveCompetitors, addCompetitorDetails, saveCategories } from "./state";
 
 export const getCompetitors = () => {
     return (dispatch) => {
         return axios.get(`/competitors`).then(({ data }) => {
             dispatch(saveCompetitors(data.data));
-            })
-        }
+        })
     }
+}
 
 // export const getCompetitor = (id) => {
 //     return (dispatch) => {
@@ -25,7 +25,14 @@ export const getCompetitor = (id) => (dispatch, getState) => {
     if (!isComplete) {
         axios.get(`/competitors/${id}`).then(({ data }) => {
             dispatch(addCompetitorDetails(data.data));
-            });
-        }
+        });
+    }
 };
 
+export const getCategories = () => {
+    return (dispatch) => {
+        return axios.get(`/categories`).then(({ data }) => {
+            dispatch(saveCategories(data));
+        })
+    }
+}
