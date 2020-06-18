@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import logo from '../../imgs/Logo.png';
 import baseball from '../../imgs/baseball.png';
 
@@ -22,7 +21,7 @@ const CompetitorCard = (
 
 
     return (<div className="backgroundImage">
-        <PageHeading>Competitor Name</PageHeading>
+        <PageHeading><h1 className="heading competitorCardHeading ">Competitor</h1></PageHeading>
 
         <div className="centered">
             {competitor === undefined ? <Loading loaded={false} /> :
@@ -37,20 +36,20 @@ const CompetitorCard = (
                             }} />
 
                         <Card.Body className="m-auto">
-                            <h1 className='p-2 titleFont'>{competitor.name}</h1>
+                            <h2 className='p-2 cardTitleFont'>{competitor.name}</h2>
                             <p className='p-3 italicFont'>{competitor.bio}</p>
-                            <h6 className="titleFont">Date Of Birth:</h6>
+                            <h6 className="cardTitleFont">Date Of Birth:</h6>
                             <p className="italicFont">{competitor.dob}</p>
-                            <h6 className="titleFont">Competing in:</h6>
+                            <h6 className="cardTitleFont">Competing in:</h6>
                             <p className="italicFont">{competitor.sport}</p>
                         </Card.Body>
                     </Card>
                     <Link
-                        to={`/categories`}
-                        className="backBtn"
+                        to={`/competitors`}
+                        className="heading backBtn"
                         style={{ textDecoration: "none" }}
                     >
-                        <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to events
+                        <i class="fas fa-arrow-left"></i>Back to competitors
                     </Link>
                 </>
             }

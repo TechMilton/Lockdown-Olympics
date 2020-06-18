@@ -57,7 +57,7 @@ const SportsCard = (
                     className="backBtn"
                     style={{ textDecoration: "none" }}
                 >
-                    <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to events
+                    <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to categories
                 </Link>
             </Loading>
         </div>
