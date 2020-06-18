@@ -40,6 +40,7 @@ const SportsCard = (
                                 src={baseball}
                                 style={{
                                     width: '150px',
+                                    marginTop: 30
                                 }} />
 
                             <Card.Body className="m-auto">
@@ -51,7 +52,13 @@ const SportsCard = (
                         </Card>
                     )}
                 </div>
-
+                <Link
+                    to={`/categories`}
+                    className="backBtn"
+                    style={{ textDecoration: "none" }}
+                >
+                    <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to events
+                </Link>
             </Loading>
         </div>
     )
