@@ -11,17 +11,26 @@ const SportsCard = (
     {
         sports,
         handleSportsLoad,
+        categoryId,
     }
 ) => {
     useEffect(() => {
         handleSportsLoad()
     }, [])
 
+    let titlePicker = (category) => {
+        switch (category) {
+            case "1": return "Extreme";
+            case "2": return "Home";
+            case "3": return "Garden";
+            case "4": return "Food"
+        }
+    }
 
     return (
         <div className="backgroundImage">
 
-            <PageHeading>Sports Category</PageHeading>
+            <PageHeading>{titlePicker(categoryId) + " Events"}</PageHeading>
             <Loading loaded={sports.length}>
                 <div className="sportCardGroup">
                     {sports.map((sport, index) =>
