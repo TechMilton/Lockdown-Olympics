@@ -20,7 +20,7 @@ const CompetitorCard = (
         handleCompetitorLoad()
     }, [])
 
-    
+
     return (<div className="backgroundImage">
         <PageHeading>Competitor Name</PageHeading>
 
@@ -28,14 +28,14 @@ const CompetitorCard = (
             {competitor === undefined ? <Loading loaded={false} /> :
                 <Card className="competitorCard">
                     <Card.Img
-                    className="align-items-center"
+                        className="align-items-center"
                         variant="top"
                         src={baseball}
                         style={{
                             width: '150px',
                         }} />
 
-                    <Card.Body className="m-auto">
+                    <Card.Body className="m-auto" style={{ padding: 0 }}>
                         <h1 className='p-2 titleFont'>{competitor.name}</h1>
                         <p className='p-3 italicFont'>{competitor.bio}</p>
                         <h6 className="titleFont">Date Of Birth:</h6>
@@ -43,19 +43,18 @@ const CompetitorCard = (
                         <h6 className="titleFont">Competing in:</h6>
                         <p className="italicFont">{competitor.sport}</p>
                     </Card.Body>
-                    <div className="competitorListItem centered">
-                        <Link to={`/competitors`}>
-                            <h2 className="titleFont">Back to competitors</h2>
-                        </Link>
-                    </div>
+                    <Link
+                        to={`/competitors`}
+                        className="backBtn"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to competitors
+                    </Link>
                 </Card>
             }
         </div>
     </div>
-
     );
-
-
 }
 
 
