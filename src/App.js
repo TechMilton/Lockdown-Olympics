@@ -2,10 +2,11 @@ import './App.css';
 import React, { Fragment } from "react";
 
 import {
-  BrowserRouter as Router,
+  Router as Router,
   Route,
   Switch,
 } from "react-router-dom";
+import history from './history';
 
 import Home from './Components/Home/Home';
 import FourOhFour from './Components/FourOhFour';
@@ -17,7 +18,7 @@ import CompetitorList from './Components/CompetitorList';
 
 
 const App = () => (
-  <Router>
+  <Router history={ history }>
     <Fragment>
       <Switch>
 
