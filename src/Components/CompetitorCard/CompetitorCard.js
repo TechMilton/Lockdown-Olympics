@@ -35,7 +35,7 @@ const CompetitorCard = (
                             width: '150px',
                         }} />
 
-                    <Card.Body className="m-auto">
+                    <Card.Body className="m-auto" style={{ padding: 0 }}>
                         <h1 className='p-2 titleFont'>{competitor.name}</h1>
                         <p className='p-3 italicFont'>{competitor.bio}</p>
                         <h6 className="titleFont">Date Of Birth:</h6>
@@ -43,17 +43,18 @@ const CompetitorCard = (
                         <h6 className="titleFont">Competing in:</h6>
                         <p className="italicFont">{competitor.sport}</p>
                     </Card.Body>
-                    <Link to={`/competitors`} >
-                        <button className="backBtn"><i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to competitors</button>
+                    <Link
+                        to={`/competitors`}
+                        className="backBtn"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to competitors
                     </Link>
                 </Card>
             }
         </div>
     </div>
-
     );
-
-
 }
 
 

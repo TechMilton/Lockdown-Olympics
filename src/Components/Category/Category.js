@@ -45,7 +45,6 @@ const Category = ({
                 </div>
             </Loading>
         </div>
-
     )
 }
 
