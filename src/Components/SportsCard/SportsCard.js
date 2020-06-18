@@ -1,51 +1,61 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import baseball from '../../imgs/baseball.png';
 
 import PageHeading from '../PageHeading';
 
-class SportsCard extends Component {
-    constructor(props) {
-        super(props);
+import Loading from "../Loading";
 
-        this.state = {
-            sport: [],
+const SportsCard = (
+    {
+        sports,
+        handleSportsLoad,
+        categoryId,
+    }
+) => {
+    useEffect(() => {
+        handleSportsLoad()
+    }, [])
 
+    let titlePicker = (category) => {
+        switch (category) {
+            case "1": return "Extreme";
+            case "2": return "Home";
+            case "3": return "Garden";
+            case "4": return "Food"
         }
     }
 
-    componentDidMount() {
-        let { id } = this.props;
-        // this.props.getSport(id)
-    }
+    return (
+        <div className="backgroundImage">
 
+            <PageHeading>{titlePicker(categoryId) + " Events"}</PageHeading>
+            <Loading loaded={sports.length}>
+                <div className="sportCardGroup">
+                    {sports.map((sport, index) =>
+                        <Card key={index} className="sportCard">
+                            <Card.Img
+                                variant="top"
+                                src={baseball}
+                                style={{
+                                    width: '150px',
+                                }} />
 
-    render() {
-        let { sport } = this.state;
-
-
-        return (
-            <>
-                <div>
-                    <Card className="sportCard">
-                        <Card.Img
-                            variant="top"
-                            src={baseball}
-                            style={{
-                                width: '150px',
-                            }} />
-
-                        <Card.Body className="m-auto">
-                            <h1 className='p-2 titleFont'>Sports Name</h1>
-                            <h4 className='p-3 italicFont'>Description of said sport</h4>
-                            <h5 className='titleFont'>Start Time: 1900hr </h5>
-                            <h5 className='titleFont'>Arena: The Downs</h5>
-                        </Card.Body>
-                    </Card>
+                            <Card.Body className="m-auto">
+                                <h1 className='p-2 titleFont'>{sport.name}</h1>
+                                <p className='p-3 italicFont'>{sport.description}</p>
+                                <h5 className='titleFont'>{`Start Time: ${sport.start_time}`}</h5>
+                                <h5 className='titleFont'>{`Location: ${sport.arena} Arena`}</h5>
+                            </Card.Body>
+                        </Card>
+                    )}
                 </div>
-            </>
-        )
-    }
+
+            </Loading>
+        </div>
+    )
 }
+
 
 export default SportsCard;

@@ -23,10 +23,12 @@ const CompetitorCard = (
     
     return (<div className="backgroundImage">
         <PageHeading>Competitor Name</PageHeading>
-        <div>
+
+        <div className="centered">
             {competitor === undefined ? <Loading loaded={false} /> :
                 <Card className="competitorCard">
                     <Card.Img
+                    className="align-items-center"
                         variant="top"
                         src={baseball}
                         style={{
@@ -41,7 +43,7 @@ const CompetitorCard = (
                         <h6 className="titleFont">Competing in:</h6>
                         <p className="italicFont">{competitor.sport}</p>
                     </Card.Body>
-                    <div className="competitorListItem">
+                    <div className="competitorListItem centered">
                         <Link to={`/competitors`}>
                             <h2 className="titleFont">Back to competitors</h2>
                         </Link>

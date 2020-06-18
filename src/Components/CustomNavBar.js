@@ -13,7 +13,8 @@ const CustomNavBar = () => (
                     style={{
                         width: 110,
                         height: 50,
-                    }} /> Home
+                        margin: 10
+                    }} />
             </a>
         </Navbar.Brand>
     </nav>

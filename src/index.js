@@ -7,16 +7,11 @@ import * as serviceWorker from './serviceWorker';
 import store from "../src/data/store";
 import { Provider } from "react-redux";
 
-import initial from "./data/initial";
-import reducer from "./data/reducers";
-
-
-
 ReactDOM.render(
-  <Provider store={ store }>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
   </Provider>,
   document.getElementById('root')
 );

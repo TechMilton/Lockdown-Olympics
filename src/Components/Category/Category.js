@@ -1,86 +1,52 @@
-import React, { Component } from 'react';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import bgsport from '../../imgs/bgsport.jpg';
+import colours from "../../data/colours.json";
+import Loading from '../Loading';
 
-class Category extends Component {
+const Category = ({
+    categories,
+    handleLoad
+}) => {
 
-    render() {
-        return (
-            <>
-                <div style={{
-                    height: '60rem',
-                    backgroundImage: `url(${bgsport})`
-                }}>
-                    <div className="catergoriesCards">
-                        {/* Home Events */}
-                        <a className="homeLink" href="/">
-                            <Card className="homeEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/prefab-house.png" />
+    useEffect(() => {
+        handleLoad()
+    }, [])
+
+    console.log(categories, handleLoad);
+
+
+    return (
+        <div style={{
+            height: '60rem',
+            backgroundImage: `url(${bgsport})`
+        }}>
+            <Loading loaded={categories.length}>
+                <div className="catergoriesCards">
+                    {categories.map((category, index) => {
+                        return (<Link
+                            key={index}
+                            className="eventLink"
+                            to={`/categories/${category.id}/sports`}
+                        >
+                            <Card className="categoryCard">
+                                {/* <Card.Img variant="top" src={category.img_pathway} /> */}
+                                <i className={category.img_pathway}></i>
                                 <Card.Body>
-                                    <Card.Title style={{
+                                    <Card.Title className="eventName" style={{
                                         fontSize: "2rem", fontWeight: "500",
-                                    }}>Home Events</Card.Title>
-                                    <hr />
-                                    <Card.Text>
-                                        Go Hard <span className="line">or Go Home</span> and Stay Home!
-                                    </Card.Text>
-                                    <hr />
+                                    }}>{category.name} Events</Card.Title>
                                 </Card.Body>
                             </Card>
-                        </a>
-
-                        {/* Garden Events */}
-                        <a className="gardenLink" href="/">
-                            <Card className="gardenEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/garden.png" />
-                                <Card.Body>
-                                    <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Garden Events</Card.Title>
-                                    <hr />
-                                    <Card.Text>
-                                        Donec vitae velit a arcu ultrices pulvinar in quis orci.
-                                    </Card.Text>
-                                    <hr />
-                                </Card.Body>
-                            </Card>
-                        </a>
-
-                        {/* Mental Events */}
-                        <a className="mentalLink" href="/">
-                            <Card className="mentalEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/skull.png" />
-                                <Card.Body>
-                                    <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Extreme Events</Card.Title>
-                                    <hr />
-                                    <Card.Text>
-                                        Donec vitae velit a arcu ultrices pulvinar in quis orci.
-                            </Card.Text>
-                                    <hr />
-                                </Card.Body>
-                            </Card>
-                        </a>
-
-                        {/* Food Events */}
-                        <a className="foodLink" href="/">
-                            <Card className="foodEvents" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://img.icons8.com/ios-filled/100/000000/hamburger.png" />
-                                <Card.Body>
-                                    <Card.Title style={{ fontSize: "2rem", fontWeight: "500", }}>Food Events</Card.Title>
-                                    <hr />
-                                    <Card.Text>
-                                        Donec vitae velit a arcu ultrices pulvinar in quis orci.
-                                    </Card.Text>
-                                    <hr />
-                                </Card.Body>
-                            </Card>
-                        </a>
-                    </div>
+                        </Link>
+                        )
+                    })}
                 </div>
-            </>
+            </Loading>
+        </div>
 
-        )
-    }
-
-
+    )
 }
 
 export default Category;
