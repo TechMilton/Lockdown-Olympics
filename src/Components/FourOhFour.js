@@ -9,7 +9,7 @@ const FourOhFour = () => (
 
 
 <Link to={`/`}>
-<h2 className="titleFont">Home</h2>
+<h2 className="titleFont">Take Me Home..</h2>
 </Link>
 </div>
 </div>

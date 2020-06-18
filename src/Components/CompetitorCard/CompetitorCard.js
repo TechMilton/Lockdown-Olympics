@@ -23,10 +23,12 @@ const CompetitorCard = (
 
     return (<div className="backgroundImage">
         <PageHeading>Competitor Name</PageHeading>
-        <div>
+
+        <div className="centered">
             {competitor === undefined ? <Loading loaded={false} /> :
                 <Card className="competitorCard">
                     <Card.Img
+                        className="align-items-center"
                         variant="top"
                         src={baseball}
                         style={{
