@@ -87,7 +87,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   border-width: 5px;
-  border-color:#afd3ff;
+  border-color: #afd3ff;
 }
 
 .highlightText {
@@ -240,6 +240,15 @@ body {
   padding: 50px;
   margin: 10px;
   background-color: #AFD3FE;
+}
+
+.foodEvents {
+  height: 500px;
+  padding: 50px;
+  background-color: #AFD3FE;
+  -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
+  box-shadow: 0px -8px 0px 0px rgba(252, 177, 49)
 }
 
 .progress {
