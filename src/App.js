@@ -19,6 +19,7 @@ import SportsCard from './Components/SportsCard';
 
 import CompetitorList from './Components/CompetitorList';
 
+import Registration from './Components/Registration';
 
 const App = () => (
   <Router history={ history }>
@@ -45,6 +46,10 @@ const App = () => (
         <Route path="/categories/:id/sports" render={({ match }) => (
           <SportsCard categoryId={match.params.id} />
         )} />
+
+        <Route exact path="/registration">
+          <Registration />
+        </Route>
 
         <Route exact path="/404">
           <FourOhFour></FourOhFour>

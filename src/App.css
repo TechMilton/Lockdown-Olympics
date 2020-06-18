@@ -281,3 +281,12 @@ body {
   vertical-align: middle;
   display: block;
 }
+
+/* Registration form */
+.registrationCard {
+  padding: 3rem;
+  background-color: #afd3ff;
+  border: solid 5px #fcb131;
+  font-family: 'Roboto Condensed',
+    sans-serif;
+}
