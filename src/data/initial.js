@@ -1,7 +1,11 @@
 const initial = {
     categories: [],
     sports: [],
-    competitors: []
+    competitors: [],
+    name: "",
+    bio: "",
+    dob: "",
+    sportId: ""
 };
 
 export default initial;
