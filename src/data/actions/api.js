@@ -1,6 +1,6 @@
 import axios from "../../axios";
 
-import { saveCompetitors, addCompetitorDetails, saveCategories, saveSports } from "./state";
+import { saveCompetitors, addCompetitorDetails, saveCategories, saveSports, registerCompetitor } from "./state";
 
 export const getCompetitors = () => {
     return (dispatch) => {
@@ -29,7 +29,21 @@ export const getCategories = () => {
 }
 
 export const getSports = (id) => (dispatch, getState) => {
-        return axios.get(`/categories/${id}/sports`).then(({ data }) => {
-            dispatch(saveSports(data.data));
-        });
-    }
+    return axios.get(`/categories/${id}/sports`).then(({ data }) => {
+        dispatch(saveSports(data.data));
+    });
+}
+
+export const postCompetitor = ({ name, bio, dob, sportId }) => {
+    return (dispatch) => {
+        axios.post("/competitors", {
+            name,
+            bio,
+            dob,
+            sport_id: sportId,
+            img_pathway: "generic"
+        }).then(() => {
+            dispatch(registerCompetitor());
+        })
+    };
+}

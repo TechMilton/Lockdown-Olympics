@@ -294,6 +294,9 @@ body {
 }
 
 .fourOhFour {
+  text-align: center;
+  vertical-align: middle;
+  display: block;
   height: 100%;
   width: 100%;
   display: flex;
@@ -301,7 +304,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: antiquewhite;
-
 }
 
 .centered {
@@ -311,4 +313,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Registration form */
+.registrationCard {
+  padding: 3rem;
+  background-color: #afd3ff;
+  border: solid 5px #fcb131;
+  font-family: 'Roboto Condensed',
+    sans-serif;
 }
