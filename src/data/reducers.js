@@ -32,6 +32,11 @@ const saveCategoriesReducer = (state, { categories }) => {
     return {
         ...state,
         categories,
+
+const saveSportsReducer = (state, { sports }) => {
+    return {
+        ...state,
+        sports,
     }
 }
 
@@ -40,6 +45,7 @@ const reducer = (state, action) => {
         case "SAVE_COMPETITORS": return saveCompetitorsReducer(state, action);
         case "ADD_DETAILS_TO_COMPETITOR": return addCompetitorDetailsReducer(state, action);
         case "SAVE_CATEGORIES": return saveCategoriesReducer(state, action);
+        case "SAVE_SPORTS": return saveSportsReducer(state, action);
         default: return state;
     }
 }
