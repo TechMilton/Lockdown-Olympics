@@ -32,6 +32,8 @@ const saveCategoriesReducer = (state, { categories }) => {
     return {
         ...state,
         categories,
+    }
+}
 
 const saveSportsReducer = (state, { sports }) => {
     return {
