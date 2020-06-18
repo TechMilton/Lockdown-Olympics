@@ -14,14 +14,14 @@ class SportsCardDuo extends Component {
 
         return (
             <>
-             <div className="backgroundImage">
+                <div className="backgroundImage">
 
-                <PageHeading>Sports Catgeory</PageHeading>
-                <div className="sportCardGroup">
-                <SportsCard></SportsCard>
-                <SportsCard></SportsCard>
+                    <PageHeading>Sports Catgeory</PageHeading>
+                    <div className="sportCardGroup">
+                        <SportsCard></SportsCard>
+                        <SportsCard></SportsCard>
+                    </div>
                 </div>
-            </div>
             </>
         )
     }

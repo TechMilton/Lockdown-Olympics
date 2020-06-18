@@ -42,7 +42,9 @@ const SportsCard = (
                         </Card>
                     )}
                 </div>
-
+                <Link to={`/categories`} >
+                    <button className="backBtn"><i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to events</button>
+                </Link>
             </Loading>
         </div>
     )

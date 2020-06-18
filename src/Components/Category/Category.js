@@ -30,7 +30,7 @@ const Category = ({
                             className="eventLink"
                             to={`/categories/${category.id}/sports`}
                         >
-                            <Card className="categoryCard">
+                            <Card className="categoryCard" >
                                 {/* <Card.Img variant="top" src={category.img_pathway} /> */}
                                 <i className={category.img_pathway}></i>
                                 <Card.Body>

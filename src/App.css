@@ -7,17 +7,17 @@ body {
 
 /* Card Styling */
 .heading {
-  font-family: 'Roboto Condensed',
-    sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .backgroundImage {
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  -webkit-box-sizing: border-box;
   background-repeat: no-repeat;
   background-image: url(./imgs/sports.jpg);
+  text-align: center;
+  object-fit: cover;
 }
 
 .contrastHeading {
@@ -54,8 +54,10 @@ body {
 }
 
 .sportCardGroup {
+  width: 65rem;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .titleFont {
@@ -64,6 +66,16 @@ body {
 
 .italicFont {
   font-family: 'Cabin', sans-serif;
+}
+
+.backBtn {
+  padding: 10px 30px;
+  background-color: #fcb131;
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
 }
 
 /* End of Card Styling */
@@ -201,30 +213,35 @@ body {
   height: 350px;
   padding: 50px;
   background-color: rgb(255, 255, 255);
+  border-radius: 0 !important;
 }
 
 .eventLink:nth-child(1) .categoryCard {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(238, 51, 79, 1);
   box-shadow: 8px -8px 25px 1px rgba(238, 51, 79, 1);
+  border: 2px solid rgba(238, 51, 79, 1);
 }
 
 .eventLink:nth-child(2) .categoryCard  {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 10, 101, 1);
   box-shadow: 8px -8px 25px 1px rgba(0, 10, 101, 1);
+  border: 2px solid rgba(0, 10, 101, 1);
 }
 
 .eventLink:nth-child(3) .categoryCard  {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   -moz-box-shadow: 0px -8px 0px 0px rgba(0, 166, 81, 1);
   box-shadow: 8px -8px 25px 1px rgba(0, 166, 81, 1);
+  border: 2px solid rgba(0, 166, 81, 1);
 }
 
 .eventLink:nth-child(4) .categoryCard  {
   -webkit-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   -moz-box-shadow: 0px -8px 0px 0px rgba(252, 177, 49);
   box-shadow: 8px -8px 25px 1px rgba(252, 177, 49);
+  border: 2px solid rgba(252, 177, 49);
 }
 
 .eventLink:nth-child(1) i {
