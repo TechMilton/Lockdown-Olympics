@@ -54,36 +54,40 @@ class Registration extends Component {
             sportId, } = this.state;
 
         return (
-            <div className="backgroundImage">
+            <div style={{textAlign: "left"}} className="backgroundImage">
                 <PageHeading>Competitor Registration</PageHeading>
                 <Container className="registrationCard">
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="name.ControlInput">
-                            <Form.Label column sm={2}>Name:</Form.Label>
+                            <Form.Label>Name:</Form.Label>
                                 <Form.Control
                                     type="text"
                                     value={name}
-                                    onChange={this.handleName} />
+                                    onChange={this.handleName}
+                                    required />
                         </Form.Group>
                         <Form.Group controlId="bio.ControlInput">
-                            <Form.Label column sm={2}>Bio:</Form.Label>
+                            <Form.Label>Bio:</Form.Label>
                                 <Form.Control
                                     as="textarea"
                                     value={bio}
-                                    onChange={this.handleBio} />
+                                    onChange={this.handleBio}
+                                    required />
                         </Form.Group>
                         <Form.Group controlId="dob.ControlInput">
-                            <Form.Label column sm={2}>Date of Birth:</Form.Label>
+                            <Form.Label>Date of Birth:</Form.Label>
                                 <Form.Control
                                     type="date"
                                     value={dob}
-                                    onChange={this.handleDob} />
+                                    onChange={this.handleDob}
+                                    required />
                         </Form.Group>
                         <Form.Group controlId="sportId.ControlInput">
                             <Form.Label>Sport</Form.Label>
                             <Form.Control
                                 as="select"
                                 value={sportId}
+                                required
                                 onChange={this.handleSportId}>
                                 <option value="1">Bog Snorkelling</option>
                                 <option value="2">Giant Pumpkin Kayaking</option>
