@@ -1,7 +1,7 @@
 import axios from "../../axios";
 import history from "../../history";
 
-import { saveCompetitors, addCompetitorDetails, saveCategories, saveSports, registerCompetitor } from "./state";
+import { saveCompetitors, addCompetitorDetails, saveCategories, saveSports } from "./state";
 
 export const getCompetitors = () => {
     return (dispatch) => {

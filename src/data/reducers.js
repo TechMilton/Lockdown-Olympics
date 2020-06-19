@@ -1,5 +1,3 @@
-import initial from './initial';
-
 const saveCompetitorsReducer = (state, { competitors }) => {
     return {
         ...state,
