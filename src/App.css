@@ -29,8 +29,15 @@ border: 2px solid #3c6da8;
 }
 
 .competitorListHeading {
-  width: 500px;
+  width: 30rem;
 }
+
+@media screen and (max-width: 550px) {
+  .competitorListHeading {
+    width: 20rem;
+  }
+}
+
 
 .competitorCardHeading {
   width: 25rem;
@@ -125,7 +132,7 @@ border: 2px solid #3c6da8;
 
 .competitorListItem {
   height: 75px;
-  width: 500px;
+  width: 30rem;
   background-color: #afd3ff;
   margin: auto;
   margin-bottom: 2rem;
@@ -134,6 +141,12 @@ border: 2px solid #3c6da8;
   align-items: center;
   align-items: center;
   border: 3px solid #fcb131;
+}
+
+@media screen and (max-width: 550px) {
+  .competitorListItem {
+    width: 20rem;
+  }
 }
 
 .competitorListItem:last-child {
