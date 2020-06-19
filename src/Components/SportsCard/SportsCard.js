@@ -44,8 +44,8 @@ const SportsCard = (
                                 }} />
 
                             <Card.Body className="m-auto">
-                                <h1 className='p-2 cardTitleFont'>{sport.name}</h1>
-                                <p className='p-3 italicFont'>{sport.description}</p>
+                                <h1 className='cardTitleFont'>{sport.name}</h1>
+                                <p className='italicFont'>{sport.description}</p>
                                 <h5 className='cardTitleFont'>{`Start Time: ${sport.start_time}`}</h5>
                                 <h5 className='cardTitleFont'>{`Location: ${sport.arena} Arena`}</h5>
                             </Card.Body>

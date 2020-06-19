@@ -24,7 +24,6 @@ body {
     rgb(206, 109, 70), #fcb131
   );
 padding: 12px 40px;
-margin-bottom: 1rem;
 border: 2px solid #3c6da8;
 }
 
@@ -67,7 +66,7 @@ border: 2px solid #3c6da8;
 
 .competitorCard {
   width: 25rem;
-  margin: 0 auto 1.4rem;
+  margin: 1rem auto 1.4rem;
   padding: 2.4rem;
   padding-bottom: .5rem;
   text-align: -webkit-center;
@@ -92,10 +91,8 @@ border: 2px solid #3c6da8;
   justify-content: center;
   align-items: center;
   width: 25rem;
-  height: 35rem;
-  margin: 3rem;
-  margin-top: 3rem;
-  padding: 3rem;
+  margin: 1.4rem 3rem;
+  padding: 2.4rem;
   text-align: -webkit-center;
   background-color: #afd3ff;
   border-color: #fcb131;
