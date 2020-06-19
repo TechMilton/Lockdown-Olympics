@@ -157,6 +157,12 @@ border: 2px solid #3c6da8;
   color: rgb(54, 54, 54);
 }
 
+@media screen and (device-aspect-ratio: 40/71) and (max-width: 320px) {
+  .backBtn {
+    font-size: 1rem;
+  }
+}
+
 .backBtn:hover {
   color: #3c6da8;
 }
