@@ -281,6 +281,11 @@ text-align: center;
     sans-serif;
 }
 
+.cardLinks:hover {
+  text-decoration: none;
+  color: #3c6da8;
+}
+
 .Links {
   height: 10vh;
   margin: 0;
