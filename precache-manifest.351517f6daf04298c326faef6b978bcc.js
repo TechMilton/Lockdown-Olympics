@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bdb89c4ac4a94a02bf230c6809f8d115",
+    "revision": "97241291eaf93e6f2fdacf0b1646bba1",
     "url": "/Lockdown-Olympics/index.html"
   },
   {
-    "revision": "1ae1303b90b90bbbd5b4",
-    "url": "/Lockdown-Olympics/static/css/main.b947c275.chunk.css"
+    "revision": "0ae826a2eb4f746eb9a8",
+    "url": "/Lockdown-Olympics/static/css/main.1971628f.chunk.css"
   },
   {
     "revision": "03902b15a88689210956",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ae1303b90b90bbbd5b4",
-    "url": "/Lockdown-Olympics/static/js/main.4aa4d670.chunk.js"
+    "revision": "0ae826a2eb4f746eb9a8",
+    "url": "/Lockdown-Olympics/static/js/main.8b543c3e.chunk.js"
   },
   {
     "revision": "e7c2f419ad9c81d61d00",
