@@ -239,10 +239,19 @@ text-align: center;
 /*Home Page Styling */
 
 .backgroundLanding {
-  width: 100vw;
-  height: 80vh;
+  width: 85vw;
+  margin: 0 auto;
+  height: 70vh;
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+}
+
+.landingPageLink {
+  font-family: 'Lancelot';
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 700px) {
@@ -279,6 +288,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .link1 {
@@ -287,6 +297,7 @@ text-align: center;
 
 .link2 {
   background-color: #fcb131;
+  text-decoration: none;
 }
 
 .homePageHeader {
