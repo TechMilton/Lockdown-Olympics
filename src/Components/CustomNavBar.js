@@ -12,8 +12,8 @@ const CustomNavBar = () => (
                     src={logo}
                     alt="Nav Bar Logo"
                     style={{
-                        width: 110,
-                        height: 50,
+                        width: 130,
+                        height: 60,
                         margin: 10
                     }} />
             </Link>
