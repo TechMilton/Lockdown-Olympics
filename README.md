@@ -36,7 +36,7 @@ Custom react components were created for the site, in addition to some react boo
 
 Standard CSS was used for styling. Media queries were added to make the site design responsive to all screen sizes.
 
-### Stretch goals
+### Future Stretch goals
 - Form to perform a patch request to allow the Lockdown Olympics officials to use the site to reschedule events
 - Form to perform a delete request to allow competitors to de-register
 - Add pathways for competitor pictures to competitor table, through patch requests using the API, so each competitor details card has a unique picture relating to the competitor
