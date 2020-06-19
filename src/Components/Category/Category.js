@@ -18,10 +18,7 @@ const Category = ({
 
 
     return (
-        <div style={{
-            height: '60rem',
-            backgroundImage: `url(${bgsport})`
-        }}>
+        <div className="backgroundImage backgroundImageCategories">
             <Loading loaded={categories.length}>
                 <div className="catergoriesCards">
                     {categories.map((category, index) => {
