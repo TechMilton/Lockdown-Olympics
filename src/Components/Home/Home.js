@@ -15,10 +15,10 @@ const Home = () => (
         <nav className="homePageCards">
             <Image src={grass} className="grass" />
             <div className="Links link1">
-                <a className="cardLinks" href="/categories"><h3>EVENT CATEGORIES</h3></a>
+                <a className="cardLinks" href="/categories"><h3 className="landingPageLink">EVENT CATEGORIES</h3></a>
             </div>
             <div className="Links link2">
-                <a className="cardLinks" href="/competitors"><h3>COMPETITORS</h3></a>
+                <a className="cardLinks" href="/competitors"><h3 className="landingPageLink">COMPETITORS</h3></a>
             </div>
         </nav >
     </>
