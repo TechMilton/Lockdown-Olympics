@@ -69,9 +69,10 @@ text-align: center;
 }
 
 .backgroundImageCategories {
-  background-image: url(${bgsport});
+  background-image: url(./imgs/bgsport.jpg);
   padding: 0;
   z-index: 0;
+  overflow-Y: scroll;
 }
 
 .competitorCard {
@@ -361,7 +362,11 @@ text-align: center;
   background-image: url(./imgs/bgsport.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  flex-wrap: wrap;
+
 }
+
+
 
 .catergoriesTitle {
   align-items: center;
