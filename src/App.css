@@ -73,6 +73,13 @@ border: 2px solid #3c6da8;
   border-width: 5px;
 }
 
+@media screen and (max-width: 550px) {
+  .competitorCard {
+    width: 20rem;
+    padding: 2rem;
+  }
+}
+
 .sportCard {
   display: flex;
   flex-direction: column;
