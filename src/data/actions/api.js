@@ -1,4 +1,5 @@
 import axios from "../../axios";
+import history from "../../history";
 
 import { saveCompetitors, addCompetitorDetails, saveCategories, saveSports, registerCompetitor } from "./state";
 
@@ -43,7 +44,7 @@ export const postCompetitor = ({ name, bio, dob, sportId }) => {
             sport_id: sportId,
             img_pathway: "generic"
         }).then(() => {
-            dispatch(registerCompetitor());
+            history.push("/");
         })
     };
 }

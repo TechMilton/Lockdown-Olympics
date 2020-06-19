@@ -25,9 +25,3 @@ export const saveSports = ( data ) => {
         sports: data,
     };
 };
-
-export const registerCompetitor = () => {
-    return {
-        type: "REGISTER_COMPLETE",
-    };
-};

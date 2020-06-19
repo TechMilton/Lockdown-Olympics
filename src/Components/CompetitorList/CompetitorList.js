@@ -21,13 +21,13 @@ const CompetitorList = (
         <>
             <CustomNavBar />
             <div className="backgroundImage">
-                <PageHeading>Competitors</PageHeading>
+                <PageHeading><h1 className="heading competitorListHeading">Competitors</h1></PageHeading>
                 <Loading loaded={competitors.length}>
                     <div className="competitorList"> {
                         competitors.map((competitor, index) =>
                             <div key={index} className="competitorListItem">
                                 <Link to={`/competitors/${competitor.id}`}>
-                                    <h2 className="titleFont">{competitor.name}</h2>
+                                    <h2 className="compTitleFont">{competitor.name}</h2>
                                 </Link>
                             </div>
                         )}
