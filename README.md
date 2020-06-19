@@ -1,3 +1,48 @@
+#### Team Turing Final Week Project - 'The Lockdown Olympics"
+
+### Concept
+
+A website to provide information about an alternative olympics, showing:
+- Sports by event category
+- Competitor list
+- Further details about competitors
+- Registration form for competitors
+
+### Planning phase
+
+Objectives to fulfil a minimum viable product and stretch goals were set. Site layout was devised using a wireframe on bitpaper. Laravel was chosen to provide the backend, with a React with Redux front end. The necessary API requests were determined and database structure was set out. The data structure for responses from API requests was produced.
+
+### Site content
+
+- Home page
+- Events category page with links to individual categories
+- Sports page with details about the sports for each category
+- Competitor list page
+- Competitor details page linked through from competitor list
+- Competitor registration form which sends a post request to API to create a competitor
+
+### Installation
+
+- From desired directory git clone git@github.com:TechMilton/Lockdown-Olympics.git
+- cd into folder of cloned repo
+- npm install to install dependencies contained in package.json
+- The API that is linked to the site is hosted at https://olympics.developme.space/api. To view the repo for this and see installation instructions go to https://github.com/aejgardner/lockdown-olympics
+
+### Components
+
+Custom react components were created for the site, in addition to some react bootstrap components.
+
+### Styling
+
+Standard CSS was used for styling. Media queries were added to make the site design responsive to all screen sizes.
+
+### Stretch goals
+- Form to perform a patch request to allow the Lockdown Olympics officials to use the site to reschedule events
+- Form to perform a delete request to allow competitors to de-register
+- Add pathways for competitor pictures to competitor table, through patch requests using the API, so each competitor details card has a unique picture relating to the competitor
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
