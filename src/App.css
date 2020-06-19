@@ -7,6 +7,8 @@
   font-weight: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
 body {
   width: 100vw;
   height: 100vh;
@@ -99,7 +101,7 @@ border: 2px solid #3c6da8;
   align-items: center;
   width: 25rem;
   margin: 1.4rem 3rem;
-  padding: 2.4rem;
+  margin-bottom: 2.3rem;
   text-align: -webkit-center;
   background-color: #afd3ff;
   border-color: #fcb131;
