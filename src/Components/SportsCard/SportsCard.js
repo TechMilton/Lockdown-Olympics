@@ -34,7 +34,7 @@ const SportsCard = (
             <CustomNavBar />
             <div className="backgroundImage">
 
-                <PageHeading><h1 className="heading competitorCardHeading ">{titlePicker(categoryId) + " Events"}</h1></PageHeading>
+                <PageHeading><h1 className="heading competitorCardHeading">{titlePicker(categoryId) + " Events"}</h1></PageHeading>
                 <Loading loaded={sports.length}>
                     <div className="sportCardGroup">
                         {sports.map((sport, index) =>
@@ -47,21 +47,21 @@ const SportsCard = (
                                         height: '200px',
                                         marginTop: 30
                                     }} />
-                            <Card.Body className="m-auto">
-                                <h1 className='cardTitleFont'>{sport.name}</h1>
-                                <p className='italicFont'>{sport.description}</p>
-                                <h5 className='cardTitleFont'>{`Start Time: ${sport.start_time}`}</h5>
-                                <h5 className='cardTitleFont'>{`Location: ${sport.arena} Arena`}</h5>
-                            </Card.Body>
-                        </Card>
-                    )}
-                </div>
-                <Link
-                    to={`/categories`}
-                    className="heading backBtn"
-                    style={{ textDecoration: "none" }}
-                >
-                    <i class="fas fa-arrow-left"></i>Back to event categories
+                                <Card.Body className="m-auto">
+                                    <h1 className='cardTitleFont'>{sport.name}</h1>
+                                    <p className='italicFont'>{sport.description}</p>
+                                    <h5 className='cardTitleFont'>{`Start Time: ${sport.start_time}`}</h5>
+                                    <h5 className='cardTitleFont'>{`Location: ${sport.arena} Arena`}</h5>
+                                </Card.Body>
+                            </Card>
+                        )}
+                    </div>
+                    <Link
+                        to={`/categories`}
+                        className="heading backBtn"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <i class="fas fa-arrow-left"></i>Back to event categories
                     </Link>
                 </Loading>
             </div>
