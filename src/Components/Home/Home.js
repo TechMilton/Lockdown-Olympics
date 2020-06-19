@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'react-bootstrap/Image';
+import { Link } from "react-router-dom";
 
 import logo from '../../imgs/Logo.png';
 import grass from '../../imgs/grass.png';
@@ -15,10 +16,20 @@ const Home = () => (
         <nav className="homePageCards">
             <Image src={grass} className="grass" />
             <div className="Links link1">
-                <a className="cardLinks" href="/categories"><h3 className="landingPageLink">EVENT CATEGORIES</h3></a>
+                <Link
+                    to={`/categories`}
+                    className="cardLinks"
+                    style={{ textDecoration: "none" }}>
+                        <h3 className="landingPageLink">EVENT CATEGORIES</h3>
+                    </Link>
             </div>
             <div className="Links link2">
-                <a className="cardLinks" href="/competitors"><h3 className="landingPageLink">COMPETITORS</h3></a>
+                <Link
+                    to={`/competitors`}
+                    className="cardLinks"
+                    style={{ textDecoration: "none" }}>
+                        <h3 className="landingPageLink">COMPETITORS</h3>
+                    </Link>
             </div>
         </nav >
     </>

@@ -2,7 +2,7 @@ import './App.css';
 import React, { Fragment } from "react";
 
 import {
-  Router as Router,
+  Router,
   Route,
   Switch,
 } from "react-router-dom";

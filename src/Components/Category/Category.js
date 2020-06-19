@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
-import bgsport from '../../imgs/bgsport.jpg';
 import Loading from '../Loading';
 import CustomNavBar from '../CustomNavBar';
 
