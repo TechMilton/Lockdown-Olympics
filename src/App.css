@@ -66,9 +66,10 @@ border: 2px solid #3c6da8;
 }
 
 .backgroundImageCategories {
-  background-image: url(${bgsport});
+  background-image: url(./imgs/bgsport.jpg);
   padding: 0;
   z-index: 0;
+  overflow-Y: scroll;
 }
 
 .competitorCard {
@@ -320,7 +321,11 @@ border: 2px solid #3c6da8;
   background-image: url(./imgs/bgsport.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  flex-wrap: wrap;
+
 }
+
+
 
 .catergoriesTitle {
   align-items: center;
