@@ -23,7 +23,7 @@ const CustomNavBar = () => (
                 to={`/registration`}
                 className="heading backBtn registrationBtn"
                 style={{ textDecoration: "none" }}
-            >Registration
+            >Register
             </Link>
         </Nav>
     </Nav >
