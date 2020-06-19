@@ -1,10 +1,10 @@
 import React from 'react';
-import { Navbar } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import logo from '../imgs/Logo.png';
 
 const CustomNavBar = () => (
 
-    <nav className="customNavBar">
+    <Nav className="customNavBar">
         <Navbar.Brand>
             <a href="/">
                 <img
@@ -17,7 +17,18 @@ const CustomNavBar = () => (
                     }} />
             </a>
         </Navbar.Brand>
-    </nav>
+        <Nav className="nav-item">
+            <Nav.Item>
+                <Nav.Link href="/">Catergories</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/">Competitors</Nav.Link>
+            </Nav.Item>
+            <Nav.Item >
+                <Nav.Link href="/">Registration</Nav.Link>
+            </Nav.Item>
+        </Nav>
+    </Nav >
 
 )
 
