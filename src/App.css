@@ -138,7 +138,7 @@ text-align: center;
 
 @media screen and (max-width: 1000px) {
   .sportCardGroup {
-    width: 100vw; 
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -236,6 +236,25 @@ text-align: center;
 .backgroundLanding {
   width: 100vw;
   height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .backgroundLanding {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.homePageImage {
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .homePageImage {
+    width: 100%
+  }
 }
 
 .cardLinks {
@@ -279,6 +298,14 @@ text-align: center;
 .homePageheaderText {
   font-family: "London Olympics 2012";
   font-size: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .homePageheaderText {
+    width: 100%
+  }
 }
 
 .colClass {
@@ -306,7 +333,6 @@ text-align: center;
   padding: 0px 50px 0px 50px;
   z-index: 5;
   font-weight: bold;
-
 }
 
 .nav-item {
@@ -315,6 +341,12 @@ text-align: center;
   background-color: #afd3ff;
   justify-content: flex-end;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  .customNavBar {
+    visibility: hidden;
+  }
 }
 
 /* Categories Page */
@@ -461,19 +493,3 @@ text-align: center;
   font-family: 'Roboto Condensed',
     sans-serif;
 }
-
-
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
