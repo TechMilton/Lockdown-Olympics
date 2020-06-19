@@ -161,6 +161,10 @@ text-align: center;
   color: rgb(54, 54, 54);
 }
 
+.formBtn {
+  margin-top: 5rem;
+}
+
 @media screen and (device-aspect-ratio: 40/71) and (max-width: 320px) {
   .backBtn {
     font-size: 1rem;
@@ -330,18 +334,27 @@ text-align: center;
   width: 100vw;
   align-items: center;
   position: absolute;
+  top: 10px;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
   z-index: 5;
   font-weight: bold;
 }
 
-.nav-item {
-  font-size: 25px;
-  border: #fcb131 solid 1px;
+.registrationBtn {
+  background-image: none;
   background-color: #afd3ff;
-  justify-content: flex-end;
-  text-transform: uppercase;
+  border: 2px solid #fcb131;
+}
+
+.nav-item a {
+  font-family: 'Lancelot';
+  font-style: italic;
+  color: rgb(54, 54, 54);
+}
+
+.nav-item:hover {
+  color: #3c6da8;
 }
 
 @media screen and (max-width: 1000px) {
@@ -491,8 +504,9 @@ text-align: center;
 
 /* Registration form */
 .registrationCard {
-  margin-top: 2rem;
+  margin-top: 1.3rem;
   padding: 3rem;
+  margin-bottom: 1.3rem;
   background-color: #afd3ff;
   border: solid 5px #fcb131;
   font-family: 'Roboto Condensed',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from "react-bootstrap";
 import logo from '../imgs/Logo.png';
+import { Link } from "react-router-dom";
 
 const CustomNavBar = () => (
 
@@ -18,9 +19,12 @@ const CustomNavBar = () => (
             </a>
         </Navbar.Brand>
         <Nav className="nav-item">
-            <Nav.Item >
-                <Nav.Link style={{ color: "black" }} href="/registration">Registration</Nav.Link>
-            </Nav.Item>
+            <Link
+                to={`/registration`}
+                className="heading backBtn registrationBtn"
+                style={{ textDecoration: "none" }}
+            >Registration
+            </Link>
         </Nav>
     </Nav >
 
