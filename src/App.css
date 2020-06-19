@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@font-face {
+  font-family: "London Olympics 2012";
+  src: url("./Fonts/LONDO___.eot") format("eot"),
+    url("./Fonts/LONDO___.woff") format("woff"),
+    url("./Fonts/LONDO___.ttf") format("truetype"),
+    url("./Fonts/LONDO___.svg") format("svg");
+  font-weight: normal;
+}
 
 body {
   width: 100vw;
@@ -261,8 +268,7 @@ border: 2px solid #3c6da8;
 }
 
 .homePageheaderText {
-  font-family: 'Roboto Condensed',
-    sans-serif;
+  font-family: "London Olympics 2012";
   font-size: 50px;
 }
 
@@ -287,12 +293,19 @@ border: 2px solid #3c6da8;
   width: 100vw;
   align-items: center;
   position: absolute;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
   z-index: 5;
+  font-weight: bold;
+
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 25px;
+  border: #fcb131 solid 1px;
+  background-color: #afd3ff;
   justify-content: flex-end;
+  text-transform: uppercase;
 }
 
 /* Categories Page */
@@ -420,7 +433,6 @@ border: 2px solid #3c6da8;
 
 .fourOhFour {
   text-align: center;
-  vertical-align: middle;
   display: block;
   height: 100%;
   width: 100%;
@@ -439,3 +451,19 @@ border: 2px solid #3c6da8;
   font-family: 'Roboto Condensed',
     sans-serif;
 }
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

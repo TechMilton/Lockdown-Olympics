@@ -27,6 +27,7 @@ const App = () => (
       <Switch>
 
         <Route exact path="/">
+          <CustomNavBar />
           <Home>
           </Home>
         </Route>
@@ -48,6 +49,7 @@ const App = () => (
         )} />
 
         <Route exact path="/registration">
+          <CustomNavBar />
           <Registration />
         </Route>
 

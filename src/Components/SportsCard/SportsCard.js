@@ -6,6 +6,7 @@ import "../../imgs/1.png";
 import PageHeading from '../PageHeading';
 
 import Loading from "../Loading";
+import CustomNavBar from "../CustomNavBar";
 
 const SportsCard = (
     {
@@ -23,27 +24,29 @@ const SportsCard = (
             case "1": return "Extreme";
             case "2": return "Home";
             case "3": return "Garden";
-            case "4": return "Food"
+            case "4": return "Food";
+            default: return "";
         }
     }
 
     return (
-        <div className="backgroundImage">
+        <>
+            <CustomNavBar />
+            <div className="backgroundImage">
 
-            <PageHeading><h1 className="heading competitorCardHeading ">{titlePicker(categoryId) + " Events"}</h1></PageHeading>
-            <Loading loaded={sports.length}>
-                <div className="sportCardGroup">
-                    {sports.map((sport, index) =>
-                        <Card key={index} className="sportCard">
-                            <Card.Img
-                                variant="top"
-                                src={require(`../../imgs/${sport.id}.png`)}
-                                style={{
-                                    width: '200px',
-                                    height: '200px',
-                                    marginTop: 30
-                                }} />
-
+                <PageHeading><h1 className="heading competitorCardHeading ">{titlePicker(categoryId) + " Events"}</h1></PageHeading>
+                <Loading loaded={sports.length}>
+                    <div className="sportCardGroup">
+                        {sports.map((sport, index) =>
+                            <Card key={index} className="sportCard">
+                                <Card.Img
+                                    variant="top"
+                                    src={require(`../../imgs/${sport.id}.png`)}
+                                    style={{
+                                        width: '200px',
+                                        height: '200px',
+                                        marginTop: 30
+                                    }} />
                             <Card.Body className="m-auto">
                                 <h1 className='cardTitleFont'>{sport.name}</h1>
                                 <p className='italicFont'>{sport.description}</p>
@@ -60,8 +63,9 @@ const SportsCard = (
                 >
                     <i class="fas fa-arrow-left"></i>Back to event categories
                     </Link>
-            </Loading>
-        </div>
+                </Loading>
+            </div>
+        </>
     )
 }
 
