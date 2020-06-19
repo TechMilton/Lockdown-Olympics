@@ -40,6 +40,12 @@ body {
   padding: 1rem 0 1rem;
 }
 
+.backgroundImageCategories {
+  background-image: url(${bgsport});
+  padding: 0;
+  z-index: 0;
+}
+
 .competitorCard {
   width: 25rem;
   margin: 0 auto 1.4rem;

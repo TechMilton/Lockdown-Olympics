@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import sports from '../../../src/imgs/sports.jpg';
 
 import PageHeading from '../../Components/PageHeading';
 import Loading from '../Loading';
