@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "London Olympics 2012";
+  src: url("./Fonts/LONDO___.eot") format("eot"),
+    url("./Fonts/LONDO___.woff") format("woff"),
+    url("./Fonts/LONDO___.ttf") format("truetype"),
+    url("./Fonts/LONDO___.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -7,7 +17,7 @@ body {
 
 /* Card Styling */
 .heading {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "London Olympics 2012";
 }
 
 .backgroundImage {
@@ -164,8 +174,7 @@ body {
 }
 
 .homePageheaderText {
-  font-family: 'Roboto Condensed',
-    sans-serif;
+  font-family: "London Olympics 2012";
   font-size: 50px;
 }
 
@@ -190,11 +199,19 @@ body {
   width: 100vw;
   align-items: center;
   position: absolute;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+  z-index: 5;
+  font-weight: bold;
+
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 25px;
+  border: #fcb131 solid 1px;
+  background-color: #afd3ff;
   justify-content: flex-end;
+  text-transform: uppercase;
 }
 
 /* Categories Page */

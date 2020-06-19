@@ -6,6 +6,7 @@ import baseball from '../../imgs/baseball.png';
 import PageHeading from '../PageHeading';
 
 import Loading from "../Loading";
+import CustomNavBar from "../CustomNavBar";
 
 const SportsCard = (
     {
@@ -28,39 +29,42 @@ const SportsCard = (
     }
 
     return (
-        <div className="backgroundImage">
+        <>
+            <CustomNavBar />
+            <div className="backgroundImage">
 
-            <PageHeading>{titlePicker(categoryId) + " Events"}</PageHeading>
-            <Loading loaded={sports.length}>
-                <div className="sportCardGroup">
-                    {sports.map((sport, index) =>
-                        <Card key={index} className="sportCard">
-                            <Card.Img
-                                variant="top"
-                                src={baseball}
-                                style={{
-                                    width: '150px',
-                                    marginTop: 30
-                                }} />
+                <PageHeading>{titlePicker(categoryId) + " Events"}</PageHeading>
+                <Loading loaded={sports.length}>
+                    <div className="sportCardGroup">
+                        {sports.map((sport, index) =>
+                            <Card key={index} className="sportCard">
+                                <Card.Img
+                                    variant="top"
+                                    src={baseball}
+                                    style={{
+                                        width: '150px',
+                                        marginTop: 30
+                                    }} />
 
-                            <Card.Body className="m-auto">
-                                <h1 className='p-2 titleFont'>{sport.name}</h1>
-                                <p className='p-3 italicFont'>{sport.description}</p>
-                                <h5 className='titleFont'>{`Start Time: ${sport.start_time}`}</h5>
-                                <h5 className='titleFont'>{`Location: ${sport.arena} Arena`}</h5>
-                            </Card.Body>
-                        </Card>
-                    )}
-                </div>
-                <Link
-                    to={`/categories`}
-                    className="backBtn"
-                    style={{ textDecoration: "none" }}
-                >
-                    <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to events
+                                <Card.Body className="m-auto">
+                                    <h1 className='p-2 titleFont'>{sport.name}</h1>
+                                    <p className='p-3 italicFont'>{sport.description}</p>
+                                    <h5 className='titleFont'>{`Start Time: ${sport.start_time}`}</h5>
+                                    <h5 className='titleFont'>{`Location: ${sport.arena} Arena`}</h5>
+                                </Card.Body>
+                            </Card>
+                        )}
+                    </div>
+                    <Link
+                        to={`/categories`}
+                        className="backBtn"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <i class="fas fa-arrow-left" style={{ marginRight: 12 }}></i>Back to events
                 </Link>
-            </Loading>
-        </div>
+                </Loading>
+            </div>
+        </>
     )
 }
 

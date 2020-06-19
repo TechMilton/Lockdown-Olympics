@@ -19,13 +19,13 @@ const CustomNavBar = () => (
         </Navbar.Brand>
         <Nav className="nav-item">
             <Nav.Item>
-                <Nav.Link href="/">Catergories</Nav.Link>
+                <Nav.Link style={{ color: "black" }} href="/categories">Categories</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/">Competitors</Nav.Link>
+                <Nav.Link style={{ color: "black" }} href="/competitors">Competitors</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-                <Nav.Link href="/">Registration</Nav.Link>
+                <Nav.Link style={{ color: "black" }} href="/registration">Registration</Nav.Link>
             </Nav.Item>
         </Nav>
     </Nav >
