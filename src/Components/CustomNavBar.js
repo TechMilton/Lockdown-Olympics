@@ -7,7 +7,7 @@ const CustomNavBar = () => (
 
     <Nav className="customNavBar">
         <Navbar.Brand>
-            <a href="/">
+            <Link to={`/`}>
                 <img
                     src={logo}
                     alt="Nav Bar Logo"
@@ -16,7 +16,7 @@ const CustomNavBar = () => (
                         height: 50,
                         margin: 10
                     }} />
-            </a>
+            </Link>
         </Navbar.Brand>
         <Nav className="nav-item">
             <Link
