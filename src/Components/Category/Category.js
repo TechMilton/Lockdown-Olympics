@@ -30,9 +30,9 @@ const Category = ({
                                     {/* <Card.Img variant="top" src={category.img_pathway} /> */}
                                     <i className={category.img_pathway}></i>
                                     <Card.Body>
-                                        <Card.Title className="eventName" style={{
-                                            fontSize: "2rem", fontWeight: "500",
-                                        }}>{category.name} Events</Card.Title>
+                                        <Card.Title className="eventName">
+                                            {category.name} Events
+                                        </Card.Title>
                                     </Card.Body>
                                 </Card>
                             </Link>
