@@ -34,6 +34,7 @@ body {
   );
 padding: 12px 40px;
 border: 2px solid #3c6da8;
+text-align: center;
 }
 
 .competitorListHeading {
@@ -189,7 +190,7 @@ border: 2px solid #3c6da8;
   width: 30rem;
   background-color: #afd3ff;
   margin: auto;
-  margin-bottom: 2rem;
+  margin: 1rem auto 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,6 +454,7 @@ border: 2px solid #3c6da8;
 
 /* Registration form */
 .registrationCard {
+  margin-top: 2rem;
   padding: 3rem;
   background-color: #afd3ff;
   border: solid 5px #fcb131;

@@ -52,33 +52,33 @@ class Registration extends Component {
             sportId, } = this.state;
 
         return (
-            <div style={{textAlign: "left"}} className="backgroundImage">
-                <PageHeading>Competitor Registration</PageHeading>
+            <div style={{ textAlign: "left" }} className="backgroundImage">
+                <PageHeading><h1 className="heading competitorCardHeading">Competitor Registration</h1></PageHeading>
                 <Container className="registrationCard">
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="name.ControlInput">
                             <Form.Label>Name:</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    value={name}
-                                    onChange={this.handleName}
-                                    required />
+                            <Form.Control
+                                type="text"
+                                value={name}
+                                onChange={this.handleName}
+                                required />
                         </Form.Group>
                         <Form.Group controlId="bio.ControlInput">
                             <Form.Label>Bio:</Form.Label>
-                                <Form.Control
-                                    as="textarea"
-                                    value={bio}
-                                    onChange={this.handleBio}
-                                    required />
+                            <Form.Control
+                                as="textarea"
+                                value={bio}
+                                onChange={this.handleBio}
+                                required />
                         </Form.Group>
                         <Form.Group controlId="dob.ControlInput">
                             <Form.Label>Date of Birth:</Form.Label>
-                                <Form.Control
-                                    type="date"
-                                    value={dob}
-                                    onChange={this.handleDob}
-                                    required />
+                            <Form.Control
+                                type="date"
+                                value={dob}
+                                onChange={this.handleDob}
+                                required />
                         </Form.Group>
                         <Form.Group controlId="sportId.ControlInput">
                             <Form.Label>Sport</Form.Label>
