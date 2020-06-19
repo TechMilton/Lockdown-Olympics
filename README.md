@@ -1,4 +1,4 @@
-# Team Turing Final Week Project - 'The Lockdown Olympics"
+# Team Turing Final Week Project - 'The Lockdown Olympics'
 
 ### Concept
 
