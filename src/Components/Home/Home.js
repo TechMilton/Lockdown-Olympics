@@ -1,22 +1,17 @@
 import React from 'react';
 
 import Image from 'react-bootstrap/Image';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 
 import logo from '../../imgs/Logo.png';
 import grass from '../../imgs/grass.png';
 
 const Home = () => (
-    <div class="backgroundLanding">
-        <div>
-            <Row className="homePageHeader">
-                <Col xs={12} sm={10} md={10} className="colClass">
-                    <Image src={logo} style={{ width: 900, height: 500 }} />
-                    <h1 className="homePageheaderText">THE <br />LOCKDOWN-OLYMPICS</h1>
-                </Col>
-            </Row>
+    <>
+        <div class="backgroundLanding">
+            <Image src={logo} className="homePageImage" />
+            <h1 className="homePageheaderText">THE <br />LOCKDOWN-OLYMPICS</h1>
         </div>
+
         <nav className="homePageCards">
             <Image src={grass} className="grass" />
             <div className="Links link1">
@@ -26,7 +21,7 @@ const Home = () => (
                 <a className="cardLinks" href="/competitors"><h3>COMPETITORS</h3></a>
             </div>
         </nav >
-    </div>
+    </>
 )
 
 export default Home;

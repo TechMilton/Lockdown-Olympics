@@ -204,6 +204,25 @@ body {
 .backgroundLanding {
   width: 100vw;
   height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .backgroundLanding {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.homePageImage {
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .homePageImage {
+    width: 100%
+  }
 }
 
 .cardLinks {
@@ -247,6 +266,14 @@ body {
 .homePageheaderText {
   font-family: "London Olympics 2012";
   font-size: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .homePageheaderText {
+    width: 100%
+  }
 }
 
 .colClass {
