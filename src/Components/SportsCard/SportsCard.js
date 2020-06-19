@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
-import baseball from '../../imgs/baseball.png';
+import "../../imgs/1.png";
 
 import PageHeading from '../PageHeading';
 
@@ -41,9 +41,10 @@ const SportsCard = (
                             <Card key={index} className="sportCard">
                                 <Card.Img
                                     variant="top"
-                                    src={baseball}
+                                    src={require(`../../imgs/${sport.id}.png`)}
                                     style={{
-                                        width: '150px',
+                                        width: '200px',
+                                        height: '200px',
                                         marginTop: 30
                                     }} />
 
