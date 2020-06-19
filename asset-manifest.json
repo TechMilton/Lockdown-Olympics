@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Lockdown-Olympics/static/css/main.b947c275.chunk.css",
-    "main.js": "/Lockdown-Olympics/static/js/main.078426e8.chunk.js",
-    "main.js.map": "/Lockdown-Olympics/static/js/main.078426e8.chunk.js.map",
+    "main.js": "/Lockdown-Olympics/static/js/main.4aa4d670.chunk.js",
+    "main.js.map": "/Lockdown-Olympics/static/js/main.4aa4d670.chunk.js.map",
     "runtime-main.js": "/Lockdown-Olympics/static/js/runtime-main.03c00319.js",
     "runtime-main.js.map": "/Lockdown-Olympics/static/js/runtime-main.03c00319.js.map",
-    "static/js/2.8a7b497d.chunk.js": "/Lockdown-Olympics/static/js/2.8a7b497d.chunk.js",
-    "static/js/2.8a7b497d.chunk.js.map": "/Lockdown-Olympics/static/js/2.8a7b497d.chunk.js.map",
+    "static/js/2.0793f946.chunk.js": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js",
+    "static/js/2.0793f946.chunk.js.map": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js.map",
     "index.html": "/Lockdown-Olympics/index.html",
-    "precache-manifest.4f558cc713e3d2237cade86f60c9ed55.js": "/Lockdown-Olympics/precache-manifest.4f558cc713e3d2237cade86f60c9ed55.js",
+    "precache-manifest.749704654935605d7586064dd52e2ba3.js": "/Lockdown-Olympics/precache-manifest.749704654935605d7586064dd52e2ba3.js",
     "service-worker.js": "/Lockdown-Olympics/service-worker.js",
     "static/css/main.b947c275.chunk.css.map": "/Lockdown-Olympics/static/css/main.b947c275.chunk.css.map",
-    "static/js/2.8a7b497d.chunk.js.LICENSE.txt": "/Lockdown-Olympics/static/js/2.8a7b497d.chunk.js.LICENSE.txt",
+    "static/js/2.0793f946.chunk.js.LICENSE.txt": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js.LICENSE.txt",
     "static/media/1.png": "/Lockdown-Olympics/static/media/1.59237286.png",
     "static/media/2.png": "/Lockdown-Olympics/static/media/2.5cf590ee.png",
     "static/media/3.png": "/Lockdown-Olympics/static/media/3.f5b3412d.png",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.03c00319.js",
-    "static/js/2.8a7b497d.chunk.js",
+    "static/js/2.0793f946.chunk.js",
     "static/css/main.b947c275.chunk.css",
-    "static/js/main.078426e8.chunk.js"
+    "static/js/main.4aa4d670.chunk.js"
   ]
 }
