@@ -361,6 +361,7 @@ text-align: center;
   background-image: none;
   background-color: #afd3ff;
   border: 2px solid #fcb131;
+  padding: 3px 20px;
 }
 
 .nav-item a {
