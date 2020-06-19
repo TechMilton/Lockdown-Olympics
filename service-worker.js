@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Lockdown-Olympics/precache-manifest.cccec9e6c482dfddc34b3ba64907e682.js"
+  "/Lockdown-Olympics/precache-manifest.4f6b254c8893b0e37d17b22280f4303d.js"
 );
 
 self.addEventListener('message', (event) => {

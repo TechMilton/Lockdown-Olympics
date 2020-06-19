@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Lockdown-Olympics/static/css/main.1971628f.chunk.css",
-    "main.js": "/Lockdown-Olympics/static/js/main.8737c25d.chunk.js",
-    "main.js.map": "/Lockdown-Olympics/static/js/main.8737c25d.chunk.js.map",
+    "main.css": "/Lockdown-Olympics/static/css/main.86cb01ba.chunk.css",
+    "main.js": "/Lockdown-Olympics/static/js/main.2904d073.chunk.js",
+    "main.js.map": "/Lockdown-Olympics/static/js/main.2904d073.chunk.js.map",
     "runtime-main.js": "/Lockdown-Olympics/static/js/runtime-main.03c00319.js",
     "runtime-main.js.map": "/Lockdown-Olympics/static/js/runtime-main.03c00319.js.map",
     "static/js/2.0793f946.chunk.js": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js",
     "static/js/2.0793f946.chunk.js.map": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js.map",
     "index.html": "/Lockdown-Olympics/index.html",
-    "precache-manifest.cccec9e6c482dfddc34b3ba64907e682.js": "/Lockdown-Olympics/precache-manifest.cccec9e6c482dfddc34b3ba64907e682.js",
+    "precache-manifest.4f6b254c8893b0e37d17b22280f4303d.js": "/Lockdown-Olympics/precache-manifest.4f6b254c8893b0e37d17b22280f4303d.js",
     "service-worker.js": "/Lockdown-Olympics/service-worker.js",
-    "static/css/main.1971628f.chunk.css.map": "/Lockdown-Olympics/static/css/main.1971628f.chunk.css.map",
+    "static/css/main.86cb01ba.chunk.css.map": "/Lockdown-Olympics/static/css/main.86cb01ba.chunk.css.map",
     "static/js/2.0793f946.chunk.js.LICENSE.txt": "/Lockdown-Olympics/static/js/2.0793f946.chunk.js.LICENSE.txt",
     "static/media/1.png": "/Lockdown-Olympics/static/media/1.59237286.png",
     "static/media/2.png": "/Lockdown-Olympics/static/media/2.5cf590ee.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.03c00319.js",
     "static/js/2.0793f946.chunk.js",
-    "static/css/main.1971628f.chunk.css",
-    "static/js/main.8737c25d.chunk.js"
+    "static/css/main.86cb01ba.chunk.css",
+    "static/js/main.2904d073.chunk.js"
   ]
 }
