@@ -99,11 +99,40 @@ border: 2px solid #3c6da8;
   border-width: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  .sportCard {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sportCard {
+    width: 80vw;
+    padding: 2rem;
+    height: 38rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sportCard {
+    width: 90vw;
+  }
+}
+
 .sportCardGroup {
   width: 65rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .sportCardGroup {
+    width: 100vw; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .cardTitleFont {
