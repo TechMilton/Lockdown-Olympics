@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
@@ -52,9 +52,9 @@ class Registration extends Component {
             sportId, } = this.state;
 
         return (
-            <div style={{ textAlign: "left" }} className="backgroundImage">
+            <div className="backgroundImage">
                 <PageHeading><h1 className="heading competitorCardHeading">Competitor Registration</h1></PageHeading>
-                <Container className="registrationCard">
+                <Container className="registrationCard" style={{ textAlign: "left" }} >
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="name.ControlInput">
                             <Form.Label>Name:</Form.Label>
@@ -104,6 +104,12 @@ class Registration extends Component {
                         </Button>
                     </Form>
                 </Container>
+                <Link
+                    to={`/`}
+                    className="heading backBtn formBtn"
+                    style={{ textDecoration: "none", zIndex: 5 }}
+                ><i class="fas fa-arrow-left"></i>Back to homepage
+                </Link>
             </div>
         );
     }
