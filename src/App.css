@@ -112,7 +112,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .sportCardGroup {
-    width: 100vw; 
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -274,7 +274,6 @@ body {
   padding: 0px 50px 0px 50px;
   z-index: 5;
   font-weight: bold;
-
 }
 
 .nav-item {
@@ -283,6 +282,12 @@ body {
   background-color: #afd3ff;
   justify-content: flex-end;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  .customNavBar {
+    visibility: hidden;
+  }
 }
 
 /* Categories Page */
@@ -428,19 +433,3 @@ body {
   font-family: 'Roboto Condensed',
     sans-serif;
 }
-
-
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
